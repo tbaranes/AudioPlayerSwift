@@ -1,4 +1,4 @@
-// StoreKitCompanion.swift
+// AudioPlayerSwift.swift
 //
 // Copyright (c) 2016 Recisio (http://www.recisio.com)
 //
