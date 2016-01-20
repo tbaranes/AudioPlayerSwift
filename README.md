@@ -3,7 +3,9 @@
 [![Travis](https://img.shields.io/travis/recisio/AudioPlayerSwift.svg)](https://travis-ci.org/recisio/AudioPlayerSwift)
 ![Language](https://img.shields.io/badge/language-Swift%202-orange.svg)
 [![CocoaPods](https://img.shields.io/cocoapods/v/AudioPlayerSwift.svg?style=flat)](https://github.com/recisio/AudioPlayerSwift)
-![License](https://img.shields.io/github/license/recisio/AudioPlayerSwift.svg?style=flat)
+[![Platform](https://img.shields.io/cocoapods/p/AudioPlayerSwift.svg?style=flat)](http://cocoadocs.org/docsets/AudioPlayerSwift)
+[![License](https://img.shields.io/cocoapods/l/AudioPlayerSwift.svg?style=flat)](http://cocoapods.org/pods/AudioPlayerSwift)
+
 
 AudioPlayer is a simple class for playing audio in iOS, OS X and tvOS apps.
 
