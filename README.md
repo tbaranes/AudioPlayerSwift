@@ -1,6 +1,6 @@
 # AudioPlayer
 
-[![Travis](https://img.shields.io/travis/recisioIAudioPlayerSwift.svg)](https://travis-ci.org/recisio/AudioPlayerSwift)
+[![Travis](https://img.shields.io/travis/recisio/AudioPlayerSwift.svg)](https://travis-ci.org/recisio/AudioPlayerSwift)
 ![Language](https://img.shields.io/badge/language-Swift%202-orange.svg)
 [![CocoaPods](https://img.shields.io/cocoapods/v/AudioPlayerSwift.svg?style=flat)](https://github.com/recisio/AudioPlayerSwift)
 ![License](https://img.shields.io/github/license/recisio/AudioPlayerSwift.svg?style=flat)
