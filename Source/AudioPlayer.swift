@@ -110,12 +110,16 @@ public class AudioPlayer: NSObject {
         let path = NSBundle.mainBundle().pathForResource(soundFileComponents[0], ofType: soundFileComponents[1])
         try self.init(contentsOfPath: path!)
     }
-
-    public init(contentsOfPath path: String) throws {
+    
+    public convenience init(contentsOfPath path: String) throws {
         let fileURL = NSURL(fileURLWithPath: path)
-        URL = fileURL
-        name = fileURL.lastPathComponent
-        sound = try? AVAudioPlayer(contentsOfURL: fileURL)
+        try self.init(contentsOfURL: fileURL)
+    }
+    
+    public init(contentsOfURL URL: NSURL) throws {
+        self.URL = URL
+        name = URL.lastPathComponent
+        sound = try? AVAudioPlayer(contentsOfURL: URL)
         super.init()
         
         sound?.delegate = self
