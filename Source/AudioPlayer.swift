@@ -39,7 +39,7 @@ public class AudioPlayer: NSObject {
     public let URL: NSURL?
     
     /// A callback closure that will be called when the audio finishes playing, or is stopped.
-    internal var completionHandler: SoundCompletionHandler?
+    public var completionHandler: SoundCompletionHandler?
     
     /// is it playing or not?
     public var playing: Bool {
