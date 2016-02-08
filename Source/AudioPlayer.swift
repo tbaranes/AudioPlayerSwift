@@ -33,7 +33,7 @@ public class AudioPlayer: NSObject {
     public typealias SoundCompletionHandler = (didFinish: Bool) -> Void
     
     /// Name of the used to initialize the object
-    public let name: String?
+    public var name: String?
 
     /// URL of the used to initialize the object
     public let URL: NSURL?
