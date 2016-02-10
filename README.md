@@ -26,7 +26,7 @@ See the samples project to see advanced usage
 
 ## Installation
 
-### Cocoapods Installation
+### CocoaPods Installation
 
 AudioPlayer is available on CocoaPods. Just add the following to your Podfile:
 
