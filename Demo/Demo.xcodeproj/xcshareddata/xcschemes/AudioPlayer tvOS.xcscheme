@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E2B2F9FA1C4BB5DC00ABF3C5"
-               BuildableName = "AudioPlayer tvOS.app"
+               BuildableName = "AudioPlayer.app"
                BlueprintName = "AudioPlayer tvOS"
                ReferencedContainer = "container:Demo.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E2B2F9FA1C4BB5DC00ABF3C5"
-            BuildableName = "AudioPlayer tvOS.app"
+            BuildableName = "AudioPlayer.app"
             BlueprintName = "AudioPlayer tvOS"
             ReferencedContainer = "container:Demo.xcodeproj">
          </BuildableReference>
@@ -56,7 +56,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E2B2F9FA1C4BB5DC00ABF3C5"
-            BuildableName = "AudioPlayer tvOS.app"
+            BuildableName = "AudioPlayer.app"
             BlueprintName = "AudioPlayer tvOS"
             ReferencedContainer = "container:Demo.xcodeproj">
          </BuildableReference>
@@ -75,7 +75,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E2B2F9FA1C4BB5DC00ABF3C5"
-            BuildableName = "AudioPlayer tvOS.app"
+            BuildableName = "AudioPlayer.app"
             BlueprintName = "AudioPlayer tvOS"
             ReferencedContainer = "container:Demo.xcodeproj">
          </BuildableReference>
