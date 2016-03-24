@@ -146,7 +146,8 @@ public class AudioPlayer: NSObject {
     // MARK: Fade
     
     public func fadeTo(volume: Float, duration: NSTimeInterval = 1.0) {
-        startVolume = volume;
+        startVolume = sound?.volume ?? 1;
+        targetVolume = volume
         fadeTime = duration;
         fadeStart = NSDate().timeIntervalSinceReferenceDate
         if timer == nil {
