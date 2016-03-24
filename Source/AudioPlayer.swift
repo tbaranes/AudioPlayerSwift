@@ -150,7 +150,7 @@ public class AudioPlayer: NSObject {
         fadeTime = duration;
         fadeStart = NSDate().timeIntervalSinceReferenceDate
         if timer == nil {
-            self.timer = NSTimer.scheduledTimerWithTimeInterval(0.015, target: self, selector: "handleFadeTo", userInfo: nil, repeats: true)
+            self.timer = NSTimer.scheduledTimerWithTimeInterval(0.015, target: self, selector: #selector(handleFadeTo), userInfo: nil, repeats: true)
         }
     }
     
@@ -165,7 +165,7 @@ public class AudioPlayer: NSObject {
 
     // MARK: Private
     
-    private func handleFadeTo() {
+    internal func handleFadeTo() {
         let now = NSDate().timeIntervalSinceReferenceDate
         let delta: Float = (Float(now - fadeStart) / Float(fadeTime) * (targetVolume - startVolume))
         sound?.volume = startVolume + delta
