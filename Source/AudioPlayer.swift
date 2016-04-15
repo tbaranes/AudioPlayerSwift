@@ -127,6 +127,7 @@ public class AudioPlayer: NSObject {
     
     deinit {
         timer?.invalidate()
+        sound?.delegate = nil
     }
     
     // MARK: Play / Stop
