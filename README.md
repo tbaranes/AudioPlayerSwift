@@ -3,11 +3,11 @@
 [![Travis](https://img.shields.io/travis/recisio/AudioPlayerSwift.svg)](https://travis-ci.org/recisio/AudioPlayerSwift)
 ![Language](https://img.shields.io/badge/language-Swift%202.2-orange.svg)
 [![CocoaPods](https://img.shields.io/cocoapods/v/AudioPlayerSwift.svg?style=flat)](https://github.com/recisio/AudioPlayerSwift)
-[![Platform](https://img.shields.io/cocoapods/p/AudioPlayerSwift.svg?style=flat)](http://cocoadocs.org/docsets/AudioPlayerSwift)
+[![Platform](https://img.shields.io/cocoapods/p/AudioPlayerSwift.svg?style=flat)](http://cocoadocs.org/docsets/AudioPlayerSwiftft)
 [![License](https://img.shields.io/cocoapods/l/AudioPlayerSwift.svg?style=flat)](http://cocoapods.org/pods/AudioPlayerSwift)
 
 
-AudioPlayer is a simple class for playing audio in iOS, OS X and tvOS apps.
+AudioPlayer is a simple class for playing audio in iOS, macOS and tvOS apps.
 
 ## Usage
 
@@ -62,7 +62,7 @@ name
 The name of the sound. This is either the name that was passed to the `init`, or the last path component of the audio file.
 
 ```swift
-URL
+url
 ```
 
 The absolute URL of the audio file.
@@ -74,7 +74,7 @@ completionHandler
 A callback closure that will be called when the audio finishes playing, or is stopped.
 
 ```swift
-playing
+isPlaying
 ```
 
 Is it playing or not?
@@ -119,6 +119,7 @@ The left/right stereo pan of the file. -1.0 is left, 0.0 is center, 1.0 is right
 ```swift
 init(fileName: String) throws
 init(contentsOfPath path: String) throws
+init(contentsOf url: URL) throws
 ```
 
 These methods create a new AudioPlayer instance from a file name or file path.
@@ -136,19 +137,19 @@ func stop()
 Stops the sound. Has no effect if the sound is not already playing. 
 
 ```swift
-func fadeTo(volume: Float, duration: NSTimeInterval = 1.0)
+func fadeTo(volume: Float, duration: TimeInterval = 1.0)
 ```
 
 This method fades a sound from it's current volume to the specified volume over the specified time period. 
 
 ```swift
-func fadeIn(duration: NSTimeInterval = 1.0)
+func fadeIn(duration: TimeInterval = 1.0)
 ```
 
 Fades the sound volume from 0.0 to 1.0 over the specified duration. 
 
 ```swift
-func fadeOut(duration: NSTimeInterval = 1.0)
+func fadeOut(duration: TimeInterval = 1.0)
 ```
 
 Fades the sound from it's current volume to 0.0 over the specified duration. 
