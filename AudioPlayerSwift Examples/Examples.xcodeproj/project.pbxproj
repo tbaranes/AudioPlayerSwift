@@ -16,18 +16,18 @@
 		E21882441D1FF7CA00218B74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E21882431D1FF7CA00218B74 /* Assets.xcassets */; };
 		E218825A1D1FF83400218B74 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21882591D1FF83400218B74 /* ViewController.swift */; };
 		E23420231D1FFB0D0093DD66 /* AudioPlayerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E218822A1D1FF76200218B74 /* AudioPlayerSwift.framework */; };
-		E23420241D1FFBAE0093DD66 /* sound1.caf in Resources */ = {isa = PBXBuildFile; fileRef = E2C6FADF1C4B01D80055A1BF /* sound1.caf */; };
-		E23420251D1FFBAE0093DD66 /* sound2.caf in Resources */ = {isa = PBXBuildFile; fileRef = E2C6FAE01C4B01D80055A1BF /* sound2.caf */; };
-		E23420261D1FFBAF0093DD66 /* sound1.caf in Resources */ = {isa = PBXBuildFile; fileRef = E2C6FADF1C4B01D80055A1BF /* sound1.caf */; };
-		E23420271D1FFBAF0093DD66 /* sound2.caf in Resources */ = {isa = PBXBuildFile; fileRef = E2C6FAE01C4B01D80055A1BF /* sound2.caf */; };
 		E234202A1D1FFC5B0093DD66 /* AudioPlayerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E21882261D1FF76200218B74 /* AudioPlayerSwift.framework */; };
 		E234202B1D1FFEA10093DD66 /* AudioPlayerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E28C03861D1FF0DC00FECBF2 /* AudioPlayerSwift.framework */; };
+		E23420371D2002740093DD66 /* sound1.caf in Resources */ = {isa = PBXBuildFile; fileRef = E23420351D2002740093DD66 /* sound1.caf */; };
+		E23420381D2002740093DD66 /* sound1.caf in Resources */ = {isa = PBXBuildFile; fileRef = E23420351D2002740093DD66 /* sound1.caf */; };
+		E23420391D2002740093DD66 /* sound1.caf in Resources */ = {isa = PBXBuildFile; fileRef = E23420351D2002740093DD66 /* sound1.caf */; };
+		E234203A1D2002740093DD66 /* sound2.caf in Resources */ = {isa = PBXBuildFile; fileRef = E23420361D2002740093DD66 /* sound2.caf */; };
+		E234203B1D2002740093DD66 /* sound2.caf in Resources */ = {isa = PBXBuildFile; fileRef = E23420361D2002740093DD66 /* sound2.caf */; };
+		E234203C1D2002740093DD66 /* sound2.caf in Resources */ = {isa = PBXBuildFile; fileRef = E23420361D2002740093DD66 /* sound2.caf */; };
 		E2A9AFA01C498E2900FE943A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A9AF9F1C498E2900FE943A /* AppDelegate.swift */; };
 		E2A9AFA21C498E2900FE943A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A9AFA11C498E2900FE943A /* ViewController.swift */; };
 		E2A9AFA51C498E2900FE943A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2A9AFA31C498E2900FE943A /* Main.storyboard */; };
 		E2A9AFAA1C498E2900FE943A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2A9AFA81C498E2900FE943A /* LaunchScreen.storyboard */; };
-		E2C6FAE11C4B01D80055A1BF /* sound1.caf in Resources */ = {isa = PBXBuildFile; fileRef = E2C6FADF1C4B01D80055A1BF /* sound1.caf */; };
-		E2C6FAE21C4B01D80055A1BF /* sound2.caf in Resources */ = {isa = PBXBuildFile; fileRef = E2C6FAE01C4B01D80055A1BF /* sound2.caf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +88,8 @@
 		E21882431D1FF7CA00218B74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E21882451D1FF7CA00218B74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E21882591D1FF83400218B74 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E23420351D2002740093DD66 /* sound1.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sound1.caf; sourceTree = "<group>"; };
+		E23420361D2002740093DD66 /* sound2.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sound2.caf; sourceTree = "<group>"; };
 		E28C03801D1FF0DC00FECBF2 /* AudioPlayerSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AudioPlayerSwift.xcodeproj; path = ../AudioPlayerSwift/AudioPlayerSwift.xcodeproj; sourceTree = "<group>"; };
 		E2A9AF9C1C498E2900FE943A /* AudioPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2A9AF9F1C498E2900FE943A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -96,8 +98,6 @@
 		E2A9AFA91C498E2900FE943A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2A9AFAB1C498E2900FE943A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2A9AFB41C498F6300FE943A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		E2C6FADF1C4B01D80055A1BF /* sound1.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = sound1.caf; path = ../Sounds/sound1.caf; sourceTree = "<group>"; };
-		E2C6FAE01C4B01D80055A1BF /* sound2.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = sound2.caf; path = ../Sounds/sound2.caf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,10 +211,11 @@
 		E2A9AFB71C498F8800FE943A /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				E2C6FADF1C4B01D80055A1BF /* sound1.caf */,
-				E2C6FAE01C4B01D80055A1BF /* sound2.caf */,
+				E23420351D2002740093DD66 /* sound1.caf */,
+				E23420361D2002740093DD66 /* sound2.caf */,
 			);
-			path = Sounds;
+			name = Sounds;
+			path = ../Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -375,8 +376,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E21882331D1FF7A500218B74 /* Main.storyboard in Resources */,
-				E23420251D1FFBAE0093DD66 /* sound2.caf in Resources */,
-				E23420241D1FFBAE0093DD66 /* sound1.caf in Resources */,
+				E234203B1D2002740093DD66 /* sound2.caf in Resources */,
+				E23420381D2002740093DD66 /* sound1.caf in Resources */,
 				E218820B1D1FF76200218B74 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -386,8 +387,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E21882441D1FF7CA00218B74 /* Assets.xcassets in Resources */,
-				E23420271D1FFBAF0093DD66 /* sound2.caf in Resources */,
-				E23420261D1FFBAF0093DD66 /* sound1.caf in Resources */,
+				E234203C1D2002740093DD66 /* sound2.caf in Resources */,
+				E23420391D2002740093DD66 /* sound1.caf in Resources */,
 				E21882421D1FF7CA00218B74 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,9 +397,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2C6FAE11C4B01D80055A1BF /* sound1.caf in Resources */,
 				E2A9AFAA1C498E2900FE943A /* LaunchScreen.storyboard in Resources */,
-				E2C6FAE21C4B01D80055A1BF /* sound2.caf in Resources */,
+				E234203A1D2002740093DD66 /* sound2.caf in Resources */,
+				E23420371D2002740093DD66 /* sound1.caf in Resources */,
 				E2A9AFA51C498E2900FE943A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

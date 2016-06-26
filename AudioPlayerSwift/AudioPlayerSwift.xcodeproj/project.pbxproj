@@ -18,6 +18,9 @@
 		E218825D1D1FF8E700218B74 /* AudioPlayerSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E218825C1D1FF8E700218B74 /* AudioPlayerSwiftTests.swift */; };
 		E218825E1D1FF8E700218B74 /* AudioPlayerSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E218825C1D1FF8E700218B74 /* AudioPlayerSwiftTests.swift */; };
 		E218825F1D1FF8E700218B74 /* AudioPlayerSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E218825C1D1FF8E700218B74 /* AudioPlayerSwiftTests.swift */; };
+		E234202F1D2002530093DD66 /* sound1.caf in Resources */ = {isa = PBXBuildFile; fileRef = E234202D1D2002530093DD66 /* sound1.caf */; };
+		E23420301D2002530093DD66 /* sound1.caf in Resources */ = {isa = PBXBuildFile; fileRef = E234202D1D2002530093DD66 /* sound1.caf */; };
+		E23420311D2002530093DD66 /* sound1.caf in Resources */ = {isa = PBXBuildFile; fileRef = E234202D1D2002530093DD66 /* sound1.caf */; };
 		E28C03581D1FEA2F00FECBF2 /* AudioPlayerSwift iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = E28C03571D1FEA2F00FECBF2 /* AudioPlayerSwift iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E28C035F1D1FEA2F00FECBF2 /* AudioPlayerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E28C03541D1FEA2F00FECBF2 /* AudioPlayerSwift.framework */; };
 		E28C03721D1FEC5200FECBF2 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28C03711D1FEC5200FECBF2 /* AudioPlayer.swift */; };
@@ -63,6 +66,7 @@
 		E21881EB1D1FF6B300218B74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E218825C1D1FF8E700218B74 /* AudioPlayerSwiftTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayerSwiftTests.swift; sourceTree = "<group>"; };
 		E23420281D1FFC1A0093DD66 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS10.0.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		E234202D1D2002530093DD66 /* sound1.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sound1.caf; sourceTree = "<group>"; };
 		E28C03541D1FEA2F00FECBF2 /* AudioPlayerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AudioPlayerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E28C03571D1FEA2F00FECBF2 /* AudioPlayerSwift iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AudioPlayerSwift iOS.h"; sourceTree = "<group>"; };
 		E28C03591D1FEA2F00FECBF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -168,6 +172,15 @@
 			name = "Core Tests";
 			sourceTree = "<group>";
 		};
+		E234202C1D2002530093DD66 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				E234202D1D2002530093DD66 /* sound1.caf */,
+			);
+			name = Sounds;
+			path = ../../Assets;
+			sourceTree = "<group>";
+		};
 		E28C034A1D1FEA2E00FECBF2 = {
 			isa = PBXGroup;
 			children = (
@@ -214,6 +227,7 @@
 		E28C036E1D1FEA7600FECBF2 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				E234202C1D2002530093DD66 /* Sounds */,
 				E218825B1D1FF8D100218B74 /* Core Tests */,
 				E28C03621D1FEA2F00FECBF2 /* AudioPlayerSwift iOSTests */,
 				E21881CC1D1FF69E00218B74 /* AudioPlayerSwift macOSTests */,
@@ -463,6 +477,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E23420301D2002530093DD66 /* sound1.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,6 +492,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E23420311D2002530093DD66 /* sound1.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,6 +507,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E234202F1D2002530093DD66 /* sound1.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

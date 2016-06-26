@@ -136,7 +136,7 @@ public class AudioPlayer: NSObject {
     public init(contentsOf url: URL) throws {
         self.url = url
         name = url.lastPathComponent
-        sound = try? AVAudioPlayer(contentsOf: url as URL)
+        sound = try AVAudioPlayer(contentsOf: url as URL)
         super.init()
         sound?.delegate = self
     }
