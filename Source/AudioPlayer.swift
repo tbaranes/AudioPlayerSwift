@@ -23,36 +23,36 @@
 import Foundation
 import AVFoundation
 
-public enum AudioPlayerError: ErrorType {
-    case FileExtension
+public enum AudioPlayerError: ErrorProtocol {
+    case FileExtension, FileNotFound
 }
 
 public class AudioPlayer: NSObject {
 
-    public static let SoundDidFinishPlayingNotification = "SoundDidFinishPlayingNotification"
-    public typealias SoundCompletionHandler = (didFinish: Bool) -> Void
+    public static let SoundDidFinishPlayingNotification = Notification.Name(rawValue: "SoundDidFinishPlayingNotification")
+    public typealias SoundDidFinishCompletion = (didFinish: Bool) -> Void
     
     /// Name of the used to initialize the object
     public var name: String?
 
     /// URL of the used to initialize the object
-    public let URL: NSURL?
+    public let url: URL?
     
     /// A callback closure that will be called when the audio finishes playing, or is stopped.
-    public var completionHandler: SoundCompletionHandler?
+    public var completionHandler: SoundDidFinishCompletion?
     
     /// is it playing or not?
-    public var playing: Bool {
+    public var isPlaying: Bool {
         get {
             if let nonNilsound = sound {
-                return nonNilsound.playing
+                return nonNilsound.isPlaying
             }
             return false
         }
     }
 
     /// the duration of the sound.
-    public var duration: NSTimeInterval {
+    public var duration: TimeInterval {
         get {
             if let nonNilsound = sound {
                 return nonNilsound.duration
@@ -62,7 +62,7 @@ public class AudioPlayer: NSObject {
     }
     
     /// currentTime is the offset into the sound of the current playback position.
-    public var currentTime: NSTimeInterval {
+    public var currentTime: TimeInterval {
         get {
             if let nonNilsound = sound {
                 return nonNilsound.currentTime
@@ -98,30 +98,46 @@ public class AudioPlayer: NSObject {
             sound?.pan = pan
         }
     }
-    
+
+    // MARK: Private properties
+
+    private let sound: AVAudioPlayer?
+    private var startVolume: Float = 1.0
+    private var targetVolume: Float = 1.0 {
+        didSet {
+            sound?.volume = targetVolume
+        }
+    }
+
+    private var fadeTime: TimeInterval = 0.0
+    private var fadeStart: TimeInterval = 0.0
+    private var timer: Timer?
+
     // MARK: Init
 
     public convenience init(fileName: String) throws {
-        let fixedFileName = fileName.stringByTrimmingCharactersInSet(.whitespaceAndNewlineCharacterSet())
-        var soundFileComponents = fixedFileName.componentsSeparatedByString(".")
+        let fixedFileName = fileName.trimmingCharacters(in: .whitespacesAndNewlines)
+        var soundFileComponents = fixedFileName.components(separatedBy: ".")
         if soundFileComponents.count == 1 {
             throw AudioPlayerError.FileExtension
         }
-        let path = NSBundle.mainBundle().pathForResource(soundFileComponents[0], ofType: soundFileComponents[1])
-        try self.init(contentsOfPath: path!)
+
+        guard let path = Bundle.main().pathForResource(soundFileComponents[0], ofType: soundFileComponents[1]) else {
+            throw AudioPlayerError.FileNotFound
+        }
+        try self.init(contentsOfPath: path)
     }
     
     public convenience init(contentsOfPath path: String) throws {
-        let fileURL = NSURL(fileURLWithPath: path)
-        try self.init(contentsOfURL: fileURL)
+        let fileURL = URL(fileURLWithPath: path)
+        try self.init(contentsOf: fileURL)
     }
     
-    public init(contentsOfURL URL: NSURL) throws {
-        self.URL = URL
-        name = URL.lastPathComponent
-        sound = try? AVAudioPlayer(contentsOfURL: URL)
+    public init(contentsOf url: URL) throws {
+        self.url = url
+        name = url.lastPathComponent
+        sound = try? AVAudioPlayer(contentsOf: url as URL)
         super.init()
-        
         sound?.delegate = self
     }
     
@@ -133,36 +149,36 @@ public class AudioPlayer: NSObject {
     // MARK: Play / Stop
     
     public func play() {
-        if playing == false {
+        if isPlaying == false {
             sound?.play()
         }
     }
     
     public func stop() {
-        if playing {
-            soundDidFinishPlayingSuccessfully(false)
+        if isPlaying {
+            soundDidFinishPlayingSuccessfully(didFinishSuccessfully: false)
         }
     }
     
     // MARK: Fade
     
-    public func fadeTo(volume: Float, duration: NSTimeInterval = 1.0) {
+    public func fadeTo(volume: Float, duration: TimeInterval = 1.0) {
         startVolume = sound?.volume ?? 1;
         targetVolume = volume
         fadeTime = duration;
         fadeStart = NSDate().timeIntervalSinceReferenceDate
         if timer == nil {
-            self.timer = NSTimer.scheduledTimerWithTimeInterval(0.015, target: self, selector: #selector(handleFadeTo), userInfo: nil, repeats: true)
+            timer = Timer.scheduledTimer(timeInterval: 0.015, target: self, selector: #selector(handleFadeTo), userInfo: nil, repeats: true)
         }
     }
     
-    public func fadeIn(duration: NSTimeInterval = 1.0) {
+    public func fadeIn(duration: TimeInterval = 1.0) {
         volume = 0.0
-        fadeTo(1.0, duration: duration)
+        fadeTo(volume: 1.0, duration: duration)
     }
     
-    public func fadeOut(duration: NSTimeInterval = 1.0) {
-        fadeTo(0.0, duration: duration)
+    public func fadeOut(duration: TimeInterval = 1.0) {
+        fadeTo(volume: 0.0, duration: duration)
     }
 
     // MARK: Private
@@ -181,27 +197,13 @@ public class AudioPlayer: NSObject {
                 }
         }
     }
-    
-    // MARK: Private properties
-    
-    private let sound: AVAudioPlayer?
-    private var startVolume: Float = 1.0
-    private var targetVolume: Float = 1.0 {
-        didSet {
-            sound?.volume = targetVolume
-        }
-    }
-    
-    private var fadeTime: NSTimeInterval = 0.0
-    private var fadeStart: NSTimeInterval = 0.0
-    private var timer: NSTimer?
-    
+
 }
 
 extension AudioPlayer: AVAudioPlayerDelegate {
     
-    public func audioPlayerDidFinishPlaying(player: AVAudioPlayer, successfully flag: Bool) {
-        soundDidFinishPlayingSuccessfully(flag)
+    public func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
+        soundDidFinishPlayingSuccessfully(didFinishSuccessfully: flag)
     }
     
 }
@@ -217,7 +219,7 @@ private extension AudioPlayer {
             nonNilCompletionHandler(didFinish: didFinishSuccessfully)
         }
         
-        NSNotificationCenter.defaultCenter().postNotificationName(AudioPlayer.SoundDidFinishPlayingNotification, object: self)
+        NotificationCenter.default().post(name: AudioPlayer.SoundDidFinishPlayingNotification, object: self)
     }
     
 }
