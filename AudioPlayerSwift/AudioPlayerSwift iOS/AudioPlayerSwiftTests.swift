@@ -20,7 +20,7 @@ class AudioPlayerSwiftTests: XCTestCase {
         soundPath = testBundle.pathForResource("sound1", ofType: "caf")
 
         do {
-            audioPlayer = try AudioPlayer(contentsOfPath: soundPath ?? "")            
+            audioPlayer = try AudioPlayer(contentsOfPath: soundPath ?? "")
         } catch {
             XCTAssertFalse(false)
         }
@@ -91,7 +91,8 @@ extension AudioPlayerSwiftTests {
     }
 
     func testAudioDidFinishNotification() {
-        NotificationCenter.default().addObserver(forName: AudioPlayer.SoundDidFinishPlayingNotification, object: nil, queue: nil) { _ in
+        let name = AudioPlayer.SoundDidFinishPlayingNotification
+        NotificationCenter.default().addObserver(forName: name, object: nil, queue: nil) { _ in
             XCTAssertTrue(true)
         }
 

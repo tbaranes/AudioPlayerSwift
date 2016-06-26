@@ -9,10 +9,8 @@
 /* Begin PBXBuildFile section */
 		E21881C21D1FF69E00218B74 /* AudioPlayerSwift macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = E21881C11D1FF69E00218B74 /* AudioPlayerSwift macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E21881C91D1FF69E00218B74 /* AudioPlayerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E21881BF1D1FF69D00218B74 /* AudioPlayerSwift.framework */; };
-		E21881CE1D1FF69E00218B74 /* AudioPlayerSwift_macOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21881CD1D1FF69E00218B74 /* AudioPlayerSwift_macOSTests.swift */; };
 		E21881DE1D1FF6B300218B74 /* AudioPlayerSwift tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = E21881DD1D1FF6B300218B74 /* AudioPlayerSwift tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E21881E51D1FF6B300218B74 /* AudioPlayerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E21881DB1D1FF6B300218B74 /* AudioPlayerSwift.framework */; };
-		E21881EA1D1FF6B300218B74 /* AudioPlayerSwift_tvOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21881E91D1FF6B300218B74 /* AudioPlayerSwift_tvOSTests.swift */; };
 		E21881FF1D1FF6EC00218B74 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28C03711D1FEC5200FECBF2 /* AudioPlayer.swift */; };
 		E21882001D1FF6ED00218B74 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28C03711D1FEC5200FECBF2 /* AudioPlayer.swift */; };
 		E218825D1D1FF8E700218B74 /* AudioPlayerSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E218825C1D1FF8E700218B74 /* AudioPlayerSwiftTests.swift */; };
@@ -56,13 +54,11 @@
 		E21881C11D1FF69E00218B74 /* AudioPlayerSwift macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AudioPlayerSwift macOS.h"; sourceTree = "<group>"; };
 		E21881C31D1FF69E00218B74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E21881C81D1FF69E00218B74 /* AudioPlayerSwift macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AudioPlayerSwift macOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E21881CD1D1FF69E00218B74 /* AudioPlayerSwift_macOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerSwift_macOSTests.swift; sourceTree = "<group>"; };
 		E21881CF1D1FF69E00218B74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E21881DB1D1FF6B300218B74 /* AudioPlayerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AudioPlayerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E21881DD1D1FF6B300218B74 /* AudioPlayerSwift tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AudioPlayerSwift tvOS.h"; sourceTree = "<group>"; };
 		E21881DF1D1FF6B300218B74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E21881E41D1FF6B300218B74 /* AudioPlayerSwift tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AudioPlayerSwift tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E21881E91D1FF6B300218B74 /* AudioPlayerSwift_tvOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerSwift_tvOSTests.swift; sourceTree = "<group>"; };
 		E21881EB1D1FF6B300218B74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E218825C1D1FF8E700218B74 /* AudioPlayerSwiftTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayerSwiftTests.swift; sourceTree = "<group>"; };
 		E23420281D1FFC1A0093DD66 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS10.0.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -138,7 +134,6 @@
 		E21881CC1D1FF69E00218B74 /* AudioPlayerSwift macOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				E21881CD1D1FF69E00218B74 /* AudioPlayerSwift_macOSTests.swift */,
 				E21881CF1D1FF69E00218B74 /* Info.plist */,
 			);
 			name = "AudioPlayerSwift macOSTests";
@@ -157,7 +152,6 @@
 		E21881E81D1FF6B300218B74 /* AudioPlayerSwift tvOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				E21881E91D1FF6B300218B74 /* AudioPlayerSwift_tvOSTests.swift */,
 				E21881EB1D1FF6B300218B74 /* Info.plist */,
 			);
 			name = "AudioPlayerSwift tvOSTests";
@@ -293,6 +287,7 @@
 				E21881BB1D1FF69D00218B74 /* Frameworks */,
 				E21881BC1D1FF69D00218B74 /* Headers */,
 				E21881BD1D1FF69D00218B74 /* Resources */,
+				E2FE72F91D200AC8000B5458 /* Run Script - ⚠️ SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -329,6 +324,7 @@
 				E21881D71D1FF6B300218B74 /* Frameworks */,
 				E21881D81D1FF6B300218B74 /* Headers */,
 				E21881D91D1FF6B300218B74 /* Resources */,
+				E2FE72FA1D200ACF000B5458 /* Run Script - ⚠️ SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -365,6 +361,7 @@
 				E28C03501D1FEA2E00FECBF2 /* Frameworks */,
 				E28C03511D1FEA2E00FECBF2 /* Headers */,
 				E28C03521D1FEA2E00FECBF2 /* Resources */,
+				E2FE72F81D200ABF000B5458 /* Run Script - ⚠️ SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -513,6 +510,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E2FE72F81D200ABF000B5458 /* Run Script - ⚠️ SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script - ⚠️ SwiftLint";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		E2FE72F91D200AC8000B5458 /* Run Script - ⚠️ SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script - ⚠️ SwiftLint";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		E2FE72FA1D200ACF000B5458 /* Run Script - ⚠️ SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script - ⚠️ SwiftLint";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E21881BA1D1FF69D00218B74 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -526,7 +568,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E21881CE1D1FF69E00218B74 /* AudioPlayerSwift_macOSTests.swift in Sources */,
 				E218825E1D1FF8E700218B74 /* AudioPlayerSwiftTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -543,7 +584,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E21881EA1D1FF6B300218B74 /* AudioPlayerSwift_tvOSTests.swift in Sources */,
 				E218825F1D1FF8E700218B74 /* AudioPlayerSwiftTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
