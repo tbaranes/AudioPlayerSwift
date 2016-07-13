@@ -122,7 +122,7 @@ public class AudioPlayer: NSObject {
             throw AudioPlayerError.FileExtension
         }
 
-        guard let path = Bundle.main().pathForResource(soundFileComponents[0], ofType: soundFileComponents[1]) else {
+        guard let path = Bundle.main.pathForResource(soundFileComponents[0], ofType: soundFileComponents[1]) else {
             throw AudioPlayerError.FileNotFound
         }
         try self.init(contentsOfPath: path)
@@ -219,7 +219,7 @@ private extension AudioPlayer {
             nonNilCompletionHandler(didFinish: didFinishSuccessfully)
         }
         
-        NotificationCenter.default().post(name: AudioPlayer.SoundDidFinishPlayingNotification, object: self)
+        NotificationCenter.default.post(name: AudioPlayer.SoundDidFinishPlayingNotification, object: self)
     }
     
 }
