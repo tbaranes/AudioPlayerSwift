@@ -296,6 +296,7 @@
 					};
 					E2A9AF9B1C498E2900FE943A = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -642,6 +643,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.recisio.AudioPlayer-Sample";
 				PRODUCT_NAME = AudioPlayer;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -654,6 +656,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.recisio.AudioPlayer-Sample";
 				PRODUCT_NAME = AudioPlayer;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
