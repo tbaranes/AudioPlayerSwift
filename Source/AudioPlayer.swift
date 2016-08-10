@@ -23,7 +23,7 @@
 import Foundation
 import AVFoundation
 
-public enum AudioPlayerError: ErrorProtocol {
+public enum AudioPlayerError: Error {
     case FileExtension, FileNotFound
 }
 
@@ -122,7 +122,7 @@ public class AudioPlayer: NSObject {
             throw AudioPlayerError.FileExtension
         }
 
-        guard let path = Bundle.main.pathForResource(soundFileComponents[0], ofType: soundFileComponents[1]) else {
+        guard let path = Bundle.main.path(forResource: soundFileComponents[0], ofType: soundFileComponents[1]) else {
             throw AudioPlayerError.FileNotFound
         }
         try self.init(contentsOfPath: path)
