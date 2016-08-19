@@ -175,19 +175,19 @@
 			path = ../../Assets;
 			sourceTree = "<group>";
 		};
-		E27C4AC01D678E29004FFBA4 /* AudioPlayerSwift Core */ = {
+		E27C4AC01D678E29004FFBA4 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				E27C4AC11D678E29004FFBA4 /* AudioPlayer.swift */,
 			);
-			name = "AudioPlayerSwift Core";
+			name = Sources;
 			path = ../Sources;
 			sourceTree = "<group>";
 		};
 		E28C034A1D1FEA2E00FECBF2 = {
 			isa = PBXGroup;
 			children = (
-				E27C4AC01D678E29004FFBA4 /* AudioPlayerSwift Core */,
+				E27C4AC01D678E29004FFBA4 /* Sources */,
 				E28C03561D1FEA2F00FECBF2 /* AudioPlayerSwift iOS */,
 				E21881C01D1FF69E00218B74 /* AudioPlayerSwift macOS */,
 				E21881DC1D1FF6B300218B74 /* AudioPlayerSwift tvOS */,
