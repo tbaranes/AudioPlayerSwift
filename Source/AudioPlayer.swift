@@ -30,7 +30,7 @@ public enum AudioPlayerError: Error {
 public class AudioPlayer: NSObject {
 
     public static let SoundDidFinishPlayingNotification = Notification.Name(rawValue: "SoundDidFinishPlayingNotification")
-    public typealias SoundDidFinishCompletion = (didFinish: Bool) -> Void
+    public typealias SoundDidFinishCompletion = (_ didFinish: Bool) -> Void
     
     /// Name of the used to initialize the object
     public var name: String?
@@ -101,7 +101,7 @@ public class AudioPlayer: NSObject {
 
     // MARK: Private properties
 
-    private let sound: AVAudioPlayer?
+    fileprivate let sound: AVAudioPlayer?
     private var startVolume: Float = 1.0
     private var targetVolume: Float = 1.0 {
         didSet {
@@ -111,7 +111,7 @@ public class AudioPlayer: NSObject {
 
     private var fadeTime: TimeInterval = 0.0
     private var fadeStart: TimeInterval = 0.0
-    private var timer: Timer?
+    fileprivate var timer: Timer?
 
     // MARK: Init
 
@@ -186,9 +186,10 @@ public class AudioPlayer: NSObject {
     internal func handleFadeTo() {
         let now = NSDate().timeIntervalSinceReferenceDate
         let delta: Float = (Float(now - fadeStart) / Float(fadeTime) * (targetVolume - startVolume))
-        sound?.volume = startVolume + delta
-        if delta > 0.0 && sound?.volume >= targetVolume ||
-            delta < 0.0 && sound?.volume <= targetVolume {
+        let volume = startVolume + delta
+        sound?.volume = volume
+        if delta > 0.0 && volume >= targetVolume ||
+            delta < 0.0 && volume <= targetVolume {
                 sound?.volume = targetVolume
                 timer?.invalidate()
                 timer = nil
@@ -208,15 +209,15 @@ extension AudioPlayer: AVAudioPlayerDelegate {
     
 }
 
-private extension AudioPlayer {
+fileprivate extension AudioPlayer {
     
-    private func soundDidFinishPlayingSuccessfully(didFinishSuccessfully: Bool) {
+    func soundDidFinishPlayingSuccessfully(didFinishSuccessfully: Bool) {
         sound?.stop()
         timer?.invalidate()
         timer = nil
         
         if let nonNilCompletionHandler = completionHandler {
-            nonNilCompletionHandler(didFinish: didFinishSuccessfully)
+            nonNilCompletionHandler(didFinishSuccessfully)
         }
         
         NotificationCenter.default.post(name: AudioPlayer.SoundDidFinishPlayingNotification, object: self)
