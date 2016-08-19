@@ -31,16 +31,16 @@ public class AudioPlayer: NSObject {
 
     public static let SoundDidFinishPlayingNotification = Notification.Name(rawValue: "SoundDidFinishPlayingNotification")
     public typealias SoundDidFinishCompletion = (_ didFinish: Bool) -> Void
-    
+
     /// Name of the used to initialize the object
     public var name: String?
 
     /// URL of the used to initialize the object
     public let url: URL?
-    
+
     /// A callback closure that will be called when the audio finishes playing, or is stopped.
     public var completionHandler: SoundDidFinishCompletion?
-    
+
     /// is it playing or not?
     public var isPlaying: Bool {
         get {
@@ -60,7 +60,7 @@ public class AudioPlayer: NSObject {
             return 0.0
         }
     }
-    
+
     /// currentTime is the offset into the sound of the current playback position.
     public var currentTime: TimeInterval {
         get {
@@ -77,11 +77,11 @@ public class AudioPlayer: NSObject {
     /// The volume for the sound. The nominal range is from 0.0 to 1.0.
     public var volume: Float = 1.0 {
         didSet {
-            volume = min(1.0, max(0.0, volume));
+            volume = min(1.0, max(0.0, volume))
             targetVolume = volume
         }
     }
-    
+
     /// "numberOfLoops" is the number of times that the sound will return to the beginning upon reaching the end.
     /// A value of zero means to play the sound just once.
     /// A value of one will result in playing the sound twice, and so on..
@@ -127,12 +127,12 @@ public class AudioPlayer: NSObject {
         }
         try self.init(contentsOfPath: path)
     }
-    
+
     public convenience init(contentsOfPath path: String) throws {
         let fileURL = URL(fileURLWithPath: path)
         try self.init(contentsOf: fileURL)
     }
-    
+
     public init(contentsOf url: URL) throws {
         self.url = url
         name = url.lastPathComponent
@@ -140,49 +140,49 @@ public class AudioPlayer: NSObject {
         super.init()
         sound?.delegate = self
     }
-    
+
     deinit {
         timer?.invalidate()
         sound?.delegate = nil
     }
-    
+
     // MARK: Play / Stop
-    
+
     public func play() {
         if isPlaying == false {
             sound?.play()
         }
     }
-    
+
     public func stop() {
         if isPlaying {
             soundDidFinishPlayingSuccessfully(didFinishSuccessfully: false)
         }
     }
-    
+
     // MARK: Fade
-    
+
     public func fadeTo(volume: Float, duration: TimeInterval = 1.0) {
-        startVolume = sound?.volume ?? 1;
+        startVolume = sound?.volume ?? 1
         targetVolume = volume
-        fadeTime = duration;
+        fadeTime = duration
         fadeStart = NSDate().timeIntervalSinceReferenceDate
         if timer == nil {
             timer = Timer.scheduledTimer(timeInterval: 0.015, target: self, selector: #selector(handleFadeTo), userInfo: nil, repeats: true)
         }
     }
-    
+
     public func fadeIn(duration: TimeInterval = 1.0) {
         volume = 0.0
         fadeTo(volume: 1.0, duration: duration)
     }
-    
+
     public func fadeOut(duration: TimeInterval = 1.0) {
         fadeTo(volume: 0.0, duration: duration)
     }
 
     // MARK: Private
-    
+
     internal func handleFadeTo() {
         let now = NSDate().timeIntervalSinceReferenceDate
         let delta: Float = (Float(now - fadeStart) / Float(fadeTime) * (targetVolume - startVolume))
@@ -202,25 +202,25 @@ public class AudioPlayer: NSObject {
 }
 
 extension AudioPlayer: AVAudioPlayerDelegate {
-    
+
     public func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
         soundDidFinishPlayingSuccessfully(didFinishSuccessfully: flag)
     }
-    
+
 }
 
 fileprivate extension AudioPlayer {
-    
+
     func soundDidFinishPlayingSuccessfully(didFinishSuccessfully: Bool) {
         sound?.stop()
         timer?.invalidate()
         timer = nil
-        
+
         if let nonNilCompletionHandler = completionHandler {
             nonNilCompletionHandler(didFinishSuccessfully)
         }
-        
+
         NotificationCenter.default.post(name: AudioPlayer.SoundDidFinishPlayingNotification, object: self)
     }
-    
+
 }

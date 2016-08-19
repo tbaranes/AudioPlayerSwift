@@ -11,17 +11,17 @@
 		E21881C91D1FF69E00218B74 /* AudioPlayerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E21881BF1D1FF69D00218B74 /* AudioPlayerSwift.framework */; };
 		E21881DE1D1FF6B300218B74 /* AudioPlayerSwift tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = E21881DD1D1FF6B300218B74 /* AudioPlayerSwift tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E21881E51D1FF6B300218B74 /* AudioPlayerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E21881DB1D1FF6B300218B74 /* AudioPlayerSwift.framework */; };
-		E21881FF1D1FF6EC00218B74 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28C03711D1FEC5200FECBF2 /* AudioPlayer.swift */; };
-		E21882001D1FF6ED00218B74 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28C03711D1FEC5200FECBF2 /* AudioPlayer.swift */; };
 		E218825D1D1FF8E700218B74 /* AudioPlayerSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E218825C1D1FF8E700218B74 /* AudioPlayerSwiftTests.swift */; };
 		E218825E1D1FF8E700218B74 /* AudioPlayerSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E218825C1D1FF8E700218B74 /* AudioPlayerSwiftTests.swift */; };
 		E218825F1D1FF8E700218B74 /* AudioPlayerSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E218825C1D1FF8E700218B74 /* AudioPlayerSwiftTests.swift */; };
 		E234202F1D2002530093DD66 /* sound1.caf in Resources */ = {isa = PBXBuildFile; fileRef = E234202D1D2002530093DD66 /* sound1.caf */; };
 		E23420301D2002530093DD66 /* sound1.caf in Resources */ = {isa = PBXBuildFile; fileRef = E234202D1D2002530093DD66 /* sound1.caf */; };
 		E23420311D2002530093DD66 /* sound1.caf in Resources */ = {isa = PBXBuildFile; fileRef = E234202D1D2002530093DD66 /* sound1.caf */; };
+		E27C4AC21D678E29004FFBA4 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27C4AC11D678E29004FFBA4 /* AudioPlayer.swift */; };
+		E27C4AC31D678E29004FFBA4 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27C4AC11D678E29004FFBA4 /* AudioPlayer.swift */; };
+		E27C4AC41D678E29004FFBA4 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27C4AC11D678E29004FFBA4 /* AudioPlayer.swift */; };
 		E28C03581D1FEA2F00FECBF2 /* AudioPlayerSwift iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = E28C03571D1FEA2F00FECBF2 /* AudioPlayerSwift iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E28C035F1D1FEA2F00FECBF2 /* AudioPlayerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E28C03541D1FEA2F00FECBF2 /* AudioPlayerSwift.framework */; };
-		E28C03721D1FEC5200FECBF2 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28C03711D1FEC5200FECBF2 /* AudioPlayer.swift */; };
 		E2E082EE1D1FF1B000C5B4AD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2E082ED1D1FF1B000C5B4AD /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,12 +63,12 @@
 		E218825C1D1FF8E700218B74 /* AudioPlayerSwiftTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayerSwiftTests.swift; sourceTree = "<group>"; };
 		E23420281D1FFC1A0093DD66 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS10.0.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		E234202D1D2002530093DD66 /* sound1.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sound1.caf; sourceTree = "<group>"; };
+		E27C4AC11D678E29004FFBA4 /* AudioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 		E28C03541D1FEA2F00FECBF2 /* AudioPlayerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AudioPlayerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E28C03571D1FEA2F00FECBF2 /* AudioPlayerSwift iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AudioPlayerSwift iOS.h"; sourceTree = "<group>"; };
 		E28C03591D1FEA2F00FECBF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E28C035E1D1FEA2F00FECBF2 /* AudioPlayerSwift iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AudioPlayerSwift iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E28C03651D1FEA2F00FECBF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E28C03711D1FEC5200FECBF2 /* AudioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AudioPlayer.swift; path = ../../Source/AudioPlayer.swift; sourceTree = "<group>"; };
 		E2E082ED1D1FF1B000C5B4AD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -175,10 +175,19 @@
 			path = ../../Assets;
 			sourceTree = "<group>";
 		};
+		E27C4AC01D678E29004FFBA4 /* AudioPlayerSwift Core */ = {
+			isa = PBXGroup;
+			children = (
+				E27C4AC11D678E29004FFBA4 /* AudioPlayer.swift */,
+			);
+			name = "AudioPlayerSwift Core";
+			path = ../Sources;
+			sourceTree = "<group>";
+		};
 		E28C034A1D1FEA2E00FECBF2 = {
 			isa = PBXGroup;
 			children = (
-				E28C036F1D1FEC3200FECBF2 /* AudioPlayerSwift Core */,
+				E27C4AC01D678E29004FFBA4 /* AudioPlayerSwift Core */,
 				E28C03561D1FEA2F00FECBF2 /* AudioPlayerSwift iOS */,
 				E21881C01D1FF69E00218B74 /* AudioPlayerSwift macOS */,
 				E21881DC1D1FF6B300218B74 /* AudioPlayerSwift tvOS */,
@@ -228,15 +237,6 @@
 				E21881E81D1FF6B300218B74 /* AudioPlayerSwift tvOSTests */,
 			);
 			name = Tests;
-			path = "AudioPlayerSwift iOS";
-			sourceTree = "<group>";
-		};
-		E28C036F1D1FEC3200FECBF2 /* AudioPlayerSwift Core */ = {
-			isa = PBXGroup;
-			children = (
-				E28C03711D1FEC5200FECBF2 /* AudioPlayer.swift */,
-			);
-			name = "AudioPlayerSwift Core";
 			path = "AudioPlayerSwift iOS";
 			sourceTree = "<group>";
 		};
@@ -560,7 +560,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E21881FF1D1FF6EC00218B74 /* AudioPlayer.swift in Sources */,
+				E27C4AC31D678E29004FFBA4 /* AudioPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -576,7 +576,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E21882001D1FF6ED00218B74 /* AudioPlayer.swift in Sources */,
+				E27C4AC41D678E29004FFBA4 /* AudioPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -592,7 +592,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E28C03721D1FEC5200FECBF2 /* AudioPlayer.swift in Sources */,
+				E27C4AC21D678E29004FFBA4 /* AudioPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -674,6 +674,7 @@
 		E21881D21D1FF69E00218B74 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "AudioPlayerSwift macOSTests/Info.plist";
@@ -689,6 +690,7 @@
 		E21881D31D1FF69E00218B74 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "AudioPlayerSwift macOSTests/Info.plist";
@@ -746,6 +748,7 @@
 		E21881F01D1FF6B300218B74 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = "AudioPlayerSwift tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tbaranes.AudioPlayerSwift-tvOSTests";
@@ -760,6 +763,7 @@
 		E21881F11D1FF6B300218B74 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = "AudioPlayerSwift tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tbaranes.AudioPlayerSwift-tvOSTests";
@@ -841,6 +845,7 @@
 		E21882621D1FF91500218B74 /* ReleaseTests */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "AudioPlayerSwift iOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -876,6 +881,7 @@
 		E21882641D1FF91500218B74 /* ReleaseTests */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "AudioPlayerSwift macOSTests/Info.plist";
@@ -912,6 +918,7 @@
 		E21882661D1FF91500218B74 /* ReleaseTests */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = "AudioPlayerSwift tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tbaranes.AudioPlayerSwift-tvOSTests";
@@ -1066,6 +1073,7 @@
 		E28C036C1D1FEA2F00FECBF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "AudioPlayerSwift iOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1079,6 +1087,7 @@
 		E28C036D1D1FEA2F00FECBF2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "AudioPlayerSwift iOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

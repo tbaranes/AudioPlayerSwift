@@ -16,8 +16,8 @@ class AudioPlayerSwiftTests: XCTestCase {
 
     override func setUp() {
         super.setUp()
-        let testBundle = Bundle(for: self.dynamicType)
-        soundPath = testBundle.pathForResource("sound1", ofType: "caf")
+        let testBundle = Bundle(for: type(of: self))
+        soundPath = testBundle.path(forResource: "sound1", ofType: "caf")
 
         do {
             audioPlayer = try AudioPlayer(contentsOfPath: soundPath ?? "")
@@ -92,7 +92,7 @@ extension AudioPlayerSwiftTests {
 
     func testAudioDidFinishNotification() {
         let name = AudioPlayer.SoundDidFinishPlayingNotification
-        NotificationCenter.default().addObserver(forName: name, object: nil, queue: nil) { _ in
+        NotificationCenter.default.addObserver(forName: name, object: nil, queue: nil) { _ in
             XCTAssertTrue(true)
         }
 
