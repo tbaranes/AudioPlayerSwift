@@ -775,7 +775,7 @@
 			};
 			name = Release;
 		};
-		E21882601D1FF91500218B74 /* ReleaseTests */ = {
+		E21882601D1FF91500218B74 /* ReleaseTest */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -819,9 +819,9 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = ReleaseTests;
+			name = ReleaseTest;
 		};
-		E21882611D1FF91500218B74 /* ReleaseTests */ = {
+		E21882611D1FF91500218B74 /* ReleaseTest */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -840,9 +840,9 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
-			name = ReleaseTests;
+			name = ReleaseTest;
 		};
-		E21882621D1FF91500218B74 /* ReleaseTests */ = {
+		E21882621D1FF91500218B74 /* ReleaseTest */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -853,9 +853,9 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
-			name = ReleaseTests;
+			name = ReleaseTest;
 		};
-		E21882631D1FF91500218B74 /* ReleaseTests */ = {
+		E21882631D1FF91500218B74 /* ReleaseTest */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
@@ -876,9 +876,9 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
-			name = ReleaseTests;
+			name = ReleaseTest;
 		};
-		E21882641D1FF91500218B74 /* ReleaseTests */ = {
+		E21882641D1FF91500218B74 /* ReleaseTest */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -892,9 +892,9 @@
 				SDKROOT = macosx;
 				SWIFT_VERSION = 3.0;
 			};
-			name = ReleaseTests;
+			name = ReleaseTest;
 		};
-		E21882651D1FF91500218B74 /* ReleaseTests */ = {
+		E21882651D1FF91500218B74 /* ReleaseTest */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEFINES_MODULE = YES;
@@ -913,9 +913,9 @@
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
-			name = ReleaseTests;
+			name = ReleaseTest;
 		};
-		E21882661D1FF91500218B74 /* ReleaseTests */ = {
+		E21882661D1FF91500218B74 /* ReleaseTest */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -928,7 +928,7 @@
 				SWIFT_VERSION = 3.0;
 				TVOS_DEPLOYMENT_TARGET = 10.0;
 			};
-			name = ReleaseTests;
+			name = ReleaseTest;
 		};
 		E28C03661D1FEA2F00FECBF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1105,7 +1105,7 @@
 			buildConfigurations = (
 				E21881D01D1FF69E00218B74 /* Debug */,
 				E21881D11D1FF69E00218B74 /* Release */,
-				E21882631D1FF91500218B74 /* ReleaseTests */,
+				E21882631D1FF91500218B74 /* ReleaseTest */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1115,7 +1115,7 @@
 			buildConfigurations = (
 				E21881D21D1FF69E00218B74 /* Debug */,
 				E21881D31D1FF69E00218B74 /* Release */,
-				E21882641D1FF91500218B74 /* ReleaseTests */,
+				E21882641D1FF91500218B74 /* ReleaseTest */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1125,7 +1125,7 @@
 			buildConfigurations = (
 				E21881ED1D1FF6B300218B74 /* Debug */,
 				E21881EE1D1FF6B300218B74 /* Release */,
-				E21882651D1FF91500218B74 /* ReleaseTests */,
+				E21882651D1FF91500218B74 /* ReleaseTest */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1135,7 +1135,7 @@
 			buildConfigurations = (
 				E21881F01D1FF6B300218B74 /* Debug */,
 				E21881F11D1FF6B300218B74 /* Release */,
-				E21882661D1FF91500218B74 /* ReleaseTests */,
+				E21882661D1FF91500218B74 /* ReleaseTest */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1145,7 +1145,7 @@
 			buildConfigurations = (
 				E28C03661D1FEA2F00FECBF2 /* Debug */,
 				E28C03671D1FEA2F00FECBF2 /* Release */,
-				E21882601D1FF91500218B74 /* ReleaseTests */,
+				E21882601D1FF91500218B74 /* ReleaseTest */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1155,7 +1155,7 @@
 			buildConfigurations = (
 				E28C03691D1FEA2F00FECBF2 /* Debug */,
 				E28C036A1D1FEA2F00FECBF2 /* Release */,
-				E21882611D1FF91500218B74 /* ReleaseTests */,
+				E21882611D1FF91500218B74 /* ReleaseTest */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1165,7 +1165,7 @@
 			buildConfigurations = (
 				E28C036C1D1FEA2F00FECBF2 /* Debug */,
 				E28C036D1D1FEA2F00FECBF2 /* Release */,
-				E21882621D1FF91500218B74 /* ReleaseTests */,
+				E21882621D1FF91500218B74 /* ReleaseTest */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
