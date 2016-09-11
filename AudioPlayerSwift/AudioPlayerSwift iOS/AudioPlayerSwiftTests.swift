@@ -60,10 +60,10 @@ extension AudioPlayerSwiftTests {
 
 extension AudioPlayerSwiftTests {
 
-    func testPlaySound() {
-        audioPlayer?.play()
-        XCTAssertTrue(audioPlayer?.isPlaying ?? false)
-    }
+//    func testPlaySound() {
+//        audioPlayer?.play()
+//        XCTAssertTrue(audioPlayer?.isPlaying ?? false)
+//    }
 
     func testStopSound() {
         audioPlayer?.play()
