@@ -8,7 +8,21 @@ All notable changes to the project will be documented in this file.
 
 #### API breaking changes
 
-- Swift 3 support (currently not merged in master, available using branch `feature/swift3`). README is up to date, please report if you find any diffs
+N/A
+
+#### Enhancements
+
+N/A
+
+#### Bugfixes
+
+N/A
+
+## [1.4.0](https://github.com/tbaranes/SwiftyUtils/releases/tag/1.4.0) (11-09-2016)
+
+#### API breaking changes
+
+- Swift 3 support. README is up to date, please report if you find any diffs
 - Some APIs have been updated to be more swifty, check out the README for more information
 
 ## [1.3.0](https://github.com/tbaranes/SwiftyUtils/releases/tag/1.3.0) (24-03-2016)
