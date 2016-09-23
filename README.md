@@ -1,11 +1,10 @@
 # AudioPlayer
 
-[![Travis](https://img.shields.io/travis/recisio/AudioPlayerSwift.svg)](https://travis-ci.org/recisio/AudioPlayerSwift)
+[![Travis](https://img.shields.io/travis/tbaranes/AudioPlayerSwift.svg)](https://travis-ci.org/tbaranes/AudioPlayerSwift)
 ![Language](https://img.shields.io/badge/language-Swift%203.0-orange.svg)
-[![CocoaPods](https://img.shields.io/cocoapods/v/AudioPlayerSwift.svg?style=flat)](https://github.com/recisio/AudioPlayerSwift)
+[![CocoaPods](https://img.shields.io/cocoapods/v/AudioPlayerSwift.svg?style=flat)](https://github.com/tbaranes/AudioPlayerSwift)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Platform](https://img.shields.io/cocoapods/p/AudioPlayerSwift.svg?style=flat)](http://cocoadocs.org/docsets/AudioPlayerSwiftft)
-[![License](https://img.shields.io/cocoapods/l/AudioPlayerSwift.svg?style=flat)](http://cocoapods.org/pods/AudioPlayerSwift)
-
 
 AudioPlayer is a simple class for playing audio in iOS, macOS and tvOS apps.
 
@@ -26,12 +25,20 @@ See the samples project to see advanced usage
 
 ## Installation
 
-### CocoaPods Installation
+### CocoaPods
 
-AudioPlayer is available on CocoaPods. Just add the following to your Podfile:
+Add the following to your Podfile:
 
 ```
 pod 'AudioPlayerSwift'
+```
+
+### Carthage
+
+Add the following to your Cartfile:
+
+```
+github 'tbaranes/AudioPlayerSwift'
 ```
 
 ### Swift Package Manager
@@ -43,7 +50,7 @@ import PackageDescription
 
 let package = Package(
     dependencies: [
-        .Package(url: "https://github.com/recisio/AudioPlayerSwift.git", majorVersion: 1)
+        .Package(url: "https://github.com/tbaranes/AudioPlayerSwift.git", majorVersion: 1)
     ]
 )
 ```

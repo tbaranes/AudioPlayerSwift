@@ -7,10 +7,10 @@ s.module_name      	= "AudioPlayer"
 s.version          	= "1.4.0"
 s.summary          	= "AudioPlayer is a simple class for playing audio in iOS, OS X and tvOS apps."
 s.description      	= "AudioPlayer is a simple class for playing audio in iOS, OS X and tvOS apps. You can use it for basic audio usage (play / stop), but also for advanced usage (loop, pan, seek...)"
-s.homepage         	= "https://github.com/recisio/AudioPlayerSwift"
+s.homepage         	= "https://github.com/tbaranes/AudioPlayerSwift"
 s.license      		= { :type => "MIT", :file => "LICENSE" }
-s.author           	= { "Recisio" => "tom.baranes@gmail.com" }
-s.source           	= { :git => "https://github.com/recisio/AudioPlayerSwift.git", :tag => "#{s.version}" }
+s.author           	= { "Tom Baranes" => "tom.baranes@gmail.com" }
+s.source           	= { :git => "https://github.com/tbaranes/AudioPlayerSwift.git", :tag => "#{s.version}" }
 
 # ―――  Spec tech  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 

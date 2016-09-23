@@ -18,6 +18,12 @@ N/A
 
 N/A
 
+## [1.5.0](https://github.com/tbaranes/AudioPlayerSwift/releases/tag/1.5.0) (23-09-2016)
+
+#### Enhancements
+
+- Carthage support
+
 ## [1.4.0](https://github.com/tbaranes/AudioPlayerSwift/releases/tag/1.4.0) (11-09-2016)
 
 #### API breaking changes
@@ -32,7 +38,7 @@ N/A
 
 ## [1.2.2](https://github.com/tbaranes/AudioPlayerSwift/releases/tag/1.2.1) (08-02-2016)
 
-- Make the object name mutables (by default, the audio file will be used) - [#3](https://github.com/recisio/AudioPlayerSwift/pull/3)
+- Make the object name mutables (by default, the audio file will be used) - [#3](https://github.com/tbaranes/AudioPlayerSwift/pull/3)
 
 ## [1.2.1](https://github.com/tbaranes/AudioPlayerSwift/releases/tag/1.2.1) (05-02-2016)
 
@@ -41,4 +47,4 @@ N/A
 
 ## [1.2.0](https://github.com/tbaranes/SwiftyUtils/releases/tag/1.2.0) (02-02-2016)
 
-- Add initializer from NSURL - [#1](https://github.com/recisio/AudioPlayerSwift/pull/1)
+- Add initializer from NSURL - [#1](https://github.com/tbaranes/AudioPlayerSwift/pull/1)

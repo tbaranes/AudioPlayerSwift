@@ -639,7 +639,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.recisio.AudioPlayerSwift-macOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tbaranes.AudioPlayerSwift-macOS";
 				PRODUCT_MODULE_NAME = AudioPlayerSwift;
 				PRODUCT_NAME = AudioPlayerSwift;
 				SDKROOT = macosx;
@@ -662,7 +662,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.recisio.AudioPlayerSwift-macOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tbaranes.AudioPlayerSwift-macOS";
 				PRODUCT_MODULE_NAME = AudioPlayerSwift;
 				PRODUCT_NAME = AudioPlayerSwift;
 				SDKROOT = macosx;
@@ -713,7 +713,7 @@
 				INFOPLIST_FILE = "AudioPlayerSwift tvOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.recisio.AudioPlayerSwift-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tbaranes.AudioPlayerSwift-tvOS";
 				PRODUCT_MODULE_NAME = AudioPlayerSwift;
 				PRODUCT_NAME = AudioPlayerSwift;
 				SDKROOT = appletvos;
@@ -734,7 +734,7 @@
 				INFOPLIST_FILE = "AudioPlayerSwift tvOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.recisio.AudioPlayerSwift-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tbaranes.AudioPlayerSwift-tvOS";
 				PRODUCT_MODULE_NAME = AudioPlayerSwift;
 				PRODUCT_NAME = AudioPlayerSwift;
 				SDKROOT = appletvos;
@@ -834,7 +834,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.recisio.AudioPlayerSwift-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tbaranes.AudioPlayerSwift-iOS";
 				PRODUCT_MODULE_NAME = AudioPlayerSwift;
 				PRODUCT_NAME = AudioPlayerSwift;
 				SKIP_INSTALL = YES;
@@ -869,7 +869,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.recisio.AudioPlayerSwift-macOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tbaranes.AudioPlayerSwift-macOS";
 				PRODUCT_MODULE_NAME = AudioPlayerSwift;
 				PRODUCT_NAME = AudioPlayerSwift;
 				SDKROOT = macosx;
@@ -904,7 +904,7 @@
 				INFOPLIST_FILE = "AudioPlayerSwift tvOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.recisio.AudioPlayerSwift-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tbaranes.AudioPlayerSwift-tvOS";
 				PRODUCT_MODULE_NAME = AudioPlayerSwift;
 				PRODUCT_NAME = AudioPlayerSwift;
 				SDKROOT = appletvos;
@@ -1040,7 +1040,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.recisio.AudioPlayerSwift-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tbaranes.AudioPlayerSwift-iOS";
 				PRODUCT_MODULE_NAME = AudioPlayerSwift;
 				PRODUCT_NAME = AudioPlayerSwift;
 				SKIP_INSTALL = YES;
@@ -1062,7 +1062,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.recisio.AudioPlayerSwift-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tbaranes.AudioPlayerSwift-iOS";
 				PRODUCT_MODULE_NAME = AudioPlayerSwift;
 				PRODUCT_NAME = AudioPlayerSwift;
 				SKIP_INSTALL = YES;
