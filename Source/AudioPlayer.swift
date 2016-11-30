@@ -189,7 +189,7 @@ public class AudioPlayer: NSObject {
         let volume = startVolume + delta
         sound?.volume = volume
         if delta > 0.0 && volume >= targetVolume ||
-            delta < 0.0 && volume <= targetVolume {
+            delta < 0.0 && volume <= targetVolume || delta == 0.0 {
                 sound?.volume = targetVolume
                 timer?.invalidate()
                 timer = nil
