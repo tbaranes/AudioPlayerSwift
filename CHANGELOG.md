@@ -16,7 +16,7 @@ N/A
 
 #### Bugfixes
 
-N/A
+- Fixed handleFadeTo to avoid an infinite calls situation
 
 ## [1.5.0](https://github.com/tbaranes/AudioPlayerSwift/releases/tag/1.5.0) (23-09-2016)
 
