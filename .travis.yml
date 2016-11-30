@@ -42,3 +42,5 @@ script:
   - if [ $BUILD_EXAMPLE == "YES" ]; then
       xcodebuild -workspace "$WORKSPACE" -scheme "$EXAMPLE_SCHEME" -sdk "$SDK" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO build | xcpretty -c;
     fi
+after_success:
+   - sleep 5 # Workaround for https://github.com/travis-ci/travis-ci/issues/4725
