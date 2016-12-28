@@ -153,6 +153,10 @@ public class AudioPlayer: NSObject {
             sound?.play()
         }
     }
+    
+    public func playWithDelay(duration: Int) {
+        Timer.scheduledTimer(timeInterval: TimeInterval(duration), target: self, selector: #selector(play), userInfo: nil, repeats: false)
+    }
 
     public func stop() {
         if isPlaying {
