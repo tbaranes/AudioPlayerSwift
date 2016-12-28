@@ -18,6 +18,12 @@ N/A
 
 N/A
 
+## [1.5.2](https://github.com/tbaranes/AudioPlayerSwift/releases/tag/1.5.2) (28-12-2016)
+
+#### Enhancements
+
+- Added a delay parameter to the start function
+
 ## [1.5.1](https://github.com/tbaranes/AudioPlayerSwift/releases/tag/1.5.1) (30-11-2016)
 
 #### Bugfixes

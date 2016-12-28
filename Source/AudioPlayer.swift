@@ -148,14 +148,12 @@ public class AudioPlayer: NSObject {
 
     // MARK: Play / Stop
 
-    public func play() {
-        if isPlaying == false {
-            sound?.play()
+    public func play(withDelay delay: Int = 0) {
+        if self.isPlaying == false {
+            DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(delay), execute: {
+                self.sound?.play()
+            })
         }
-    }
-    
-    public func playWithDelay(duration: Int) {
-        Timer.scheduledTimer(timeInterval: TimeInterval(duration), target: self, selector: #selector(play), userInfo: nil, repeats: false)
     }
 
     public func stop() {
