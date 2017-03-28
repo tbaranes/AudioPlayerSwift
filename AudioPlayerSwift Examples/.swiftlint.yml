@@ -1,0 +1,30 @@
+identifier_name:
+  min_length: 2
+  excluded: 
+   - x
+
+type_name:
+  excluded: 
+   - T
+
+line_length: 150
+file_length: 500
+number_separator:
+  minimum_length: 5
+
+opt_in_rules:
+ - closure_spacing
+ - conditional_returns_on_newline
+ - empty_count
+ - explicit_init
+ - overridden_super_call
+ - redundant_nil_coalescing
+ - nimble_operator
+ - closure_end_indentation
+ - first_where
+ - attributes
+ - operator_usage_whitespace
+ - prohibited_super_call
+ - number_separator
+ - object_literal
+ - fatal_error_message

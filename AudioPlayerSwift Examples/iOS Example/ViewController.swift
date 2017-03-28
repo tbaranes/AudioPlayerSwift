@@ -15,9 +15,9 @@ class ViewController: UIViewController {
 
     var sound1: AudioPlayer?
     var sound2: AudioPlayer?
-    
+
     // MARK: Life cycle
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         do {
@@ -29,7 +29,7 @@ class ViewController: UIViewController {
     }
 
     // MARK: IBAction
-    
+
     @IBAction func playSound1Pressed(sender: AnyObject) {
         sound1?.play()
     }
@@ -37,30 +37,29 @@ class ViewController: UIViewController {
     @IBAction func playSound2Pressed(sender: AnyObject) {
         sound2?.play()
     }
-    
+
     @IBAction func stopSound1Pressed(sender: AnyObject) {
         sound1?.stop()
     }
-    
+
     @IBAction func stopSound2Pressed(sender: AnyObject) {
         sound2?.stop()
     }
-    
+
     @IBAction func sound1LoopPressed(sender: UISwitch) {
         sound1?.numberOfLoops = sender.isOn ? -1 : 0
     }
-    
+
     @IBAction func sound2LoopPressed(sender: UISwitch) {
         sound2?.numberOfLoops = sender.isOn ? -1 : 0
     }
-    
+
     @IBAction func sound1VolumeValueDidChange(sender: UISlider) {
         sound1?.volume = sender.value
     }
-    
+
     @IBAction func sound2VolumeValueDidChange(sender: UISlider) {
         sound2?.volume = sender.value
     }
-    
-}
 
+}

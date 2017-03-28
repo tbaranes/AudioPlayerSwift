@@ -12,7 +12,7 @@ import AudioPlayerSwift
 class ViewController: UIViewController {
 
     // MARK: Properties
-    
+
     var sound1: AudioPlayer?
     var sound2: AudioPlayer?
 
@@ -32,22 +32,21 @@ class ViewController: UIViewController {
     }
 
     // MARK: IBAction
-    
+
     @IBAction func playSound1Pressed(sender: AnyObject) {
         sound1?.play()
     }
-    
+
     @IBAction func playSound2Pressed(sender: AnyObject) {
         sound2?.play()
     }
-    
+
     @IBAction func stopSound1Pressed(sender: AnyObject) {
         sound1?.stop()
     }
-    
+
     @IBAction func stopSound2Pressed(sender: AnyObject) {
         sound2?.stop()
     }
-    
-}
 
+}
