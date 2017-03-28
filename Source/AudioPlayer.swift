@@ -24,7 +24,7 @@ import Foundation
 import AVFoundation
 
 public enum AudioPlayerError: Error {
-    case FileExtension, FileNotFound
+    case fileExtension, fileNotFound
 }
 
 public class AudioPlayer: NSObject {
@@ -43,22 +43,18 @@ public class AudioPlayer: NSObject {
 
     /// is it playing or not?
     public var isPlaying: Bool {
-        get {
-            if let nonNilsound = sound {
-                return nonNilsound.isPlaying
-            }
-            return false
+        if let nonNilsound = sound {
+            return nonNilsound.isPlaying
         }
+        return false
     }
 
     /// the duration of the sound.
     public var duration: TimeInterval {
-        get {
-            if let nonNilsound = sound {
-                return nonNilsound.duration
-            }
-            return 0.0
+        if let nonNilsound = sound {
+            return nonNilsound.duration
         }
+        return 0.0
     }
 
     /// currentTime is the offset into the sound of the current playback position.
@@ -119,11 +115,11 @@ public class AudioPlayer: NSObject {
         let fixedFileName = fileName.trimmingCharacters(in: .whitespacesAndNewlines)
         var soundFileComponents = fixedFileName.components(separatedBy: ".")
         if soundFileComponents.count == 1 {
-            throw AudioPlayerError.FileExtension
+            throw AudioPlayerError.fileExtension
         }
 
         guard let path = Bundle.main.path(forResource: soundFileComponents[0], ofType: soundFileComponents[1]) else {
-            throw AudioPlayerError.FileNotFound
+            throw AudioPlayerError.fileNotFound
         }
         try self.init(contentsOfPath: path)
     }
