@@ -54,6 +54,34 @@ extension AudioPlayerSwiftTests {
         }
     }
 
+    func testInit_withValidData(){
+        guard let path = soundPath else {
+            XCTFail("Unable to continue, 'soundPath'")
+            return
+        }
+
+        let data = try! Data(contentsOf: URL(fileURLWithPath: path))
+
+        do {
+            _ = try AudioPlayer(data: data)
+            XCTAssertTrue(true)
+        } catch {
+            XCTAssertTrue(false)
+        }
+    }
+
+    func testInvalidData(){
+
+        let data = Data()
+
+        do {
+            _ = try AudioPlayer(data: data)
+            XCTAssertTrue(false)
+        } catch {
+            XCTAssertTrue(true)
+        }
+    }
+
 }
 
 // MARK: Sound State
