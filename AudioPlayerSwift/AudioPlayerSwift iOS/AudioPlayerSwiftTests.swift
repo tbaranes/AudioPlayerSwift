@@ -100,3 +100,26 @@ extension AudioPlayerSwiftTests {
         audioPlayer?.stop()
     }
 }
+
+// MARK: Threading
+extension AudioPlayerSwiftTests {
+
+    func testTimerInvokedOnMainThread(){
+
+        let name = AudioPlayer.SoundDidFinishPlayingNotification
+        let done = expectation(description: "done")
+
+        // qos' default value is ´DispatchQoS.QoSClass.default`
+        DispatchQueue.global().async {
+            self.audioPlayer?.play()
+            self.audioPlayer?.fadeOut(duration: 0.2)
+        }
+
+        NotificationCenter.default.addObserver(forName: name, object: nil, queue: nil) { _ in
+            XCTAssertTrue(true)
+            done.fulfill()
+        }
+
+        waitForExpectations(timeout: 2, handler: nil)
+    }
+}
