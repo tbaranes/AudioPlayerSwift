@@ -137,6 +137,14 @@ public class AudioPlayer: NSObject {
         sound?.delegate = self
     }
 
+    public init(data: Data, name: String = "AudioData") throws {
+        self.name = name
+        self.url = nil
+        sound = try AVAudioPlayer(data: data)
+        super.init()
+        sound?.delegate = self
+    }
+
     deinit {
         timer?.invalidate()
         sound?.delegate = nil
