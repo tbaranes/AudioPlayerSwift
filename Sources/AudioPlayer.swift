@@ -32,6 +32,8 @@ public class AudioPlayer: NSObject {
     public static let SoundDidFinishPlayingNotification = Notification.Name(rawValue: "SoundDidFinishPlayingNotification")
     public typealias SoundDidFinishCompletion = (_ didFinish: Bool) -> Void
 
+    // MARK: Properties
+
     /// Name of the used to initialize the object
     public var name: String?
 
@@ -98,15 +100,15 @@ public class AudioPlayer: NSObject {
     // MARK: Private properties
 
     fileprivate let sound: AVAudioPlayer?
-    private var startVolume: Float = 1.0
-    private var targetVolume: Float = 1.0 {
+    fileprivate var startVolume: Float = 1.0
+    fileprivate var targetVolume: Float = 1.0 {
         didSet {
             sound?.volume = targetVolume
         }
     }
 
-    private var fadeTime: TimeInterval = 0.0
-    private var fadeStart: TimeInterval = 0.0
+    fileprivate var fadeTime: TimeInterval = 0.0
+    fileprivate var fadeStart: TimeInterval = 0.0
     fileprivate var timer: Timer?
 
     // MARK: Init
@@ -142,7 +144,11 @@ public class AudioPlayer: NSObject {
         sound?.delegate = nil
     }
 
-    // MARK: Play / Stop
+}
+
+// MARK: - Play / Stop
+
+extension AudioPlayer {
 
     public func play(withDelay delay: Int = 0) {
         if self.isPlaying == false {
@@ -154,11 +160,15 @@ public class AudioPlayer: NSObject {
 
     public func stop() {
         if isPlaying {
-            soundDidFinishPlayingSuccessfully(didFinishSuccessfully: false)
+            soundDidFinishPlaying(successfully: false)
         }
     }
 
-    // MARK: Fade
+}
+
+// MARK: - Fade
+
+extension AudioPlayer {
 
     public func fadeTo(volume: Float, duration: TimeInterval = 1.0) {
         startVolume = sound?.volume ?? 1
@@ -179,9 +189,7 @@ public class AudioPlayer: NSObject {
         fadeTo(volume: 0.0, duration: duration)
     }
 
-    // MARK: Private
-
-    internal func handleFadeTo() {
+    func handleFadeTo() {
         let now = NSDate().timeIntervalSinceReferenceDate
         let delta: Float = (Float(now - fadeStart) / Float(fadeTime) * (targetVolume - startVolume))
         let volume = startVolume + delta
@@ -199,23 +207,21 @@ public class AudioPlayer: NSObject {
 
 }
 
+// MARK: - AVAudioPlayerDelegate
+
 extension AudioPlayer: AVAudioPlayerDelegate {
 
     public func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
-        soundDidFinishPlayingSuccessfully(didFinishSuccessfully: flag)
+        soundDidFinishPlaying(successfully: flag)
     }
 
-}
-
-fileprivate extension AudioPlayer {
-
-    func soundDidFinishPlayingSuccessfully(didFinishSuccessfully: Bool) {
+    fileprivate func soundDidFinishPlaying(successfully flag: Bool) {
         sound?.stop()
         timer?.invalidate()
         timer = nil
 
         if let nonNilCompletionHandler = completionHandler {
-            nonNilCompletionHandler(didFinishSuccessfully)
+            nonNilCompletionHandler(flag)
         }
 
         NotificationCenter.default.post(name: AudioPlayer.SoundDidFinishPlayingNotification, object: self)
