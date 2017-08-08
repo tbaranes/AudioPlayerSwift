@@ -95,7 +95,7 @@ extension AudioPlayerSwiftTests {
 
     func testAudioDidFinishNotification() {
         let name = AudioPlayer.SoundDidFinishPlayingNotification
-        NotificationCenter.default.addObserver(forName: name, object: nil, queue: nil) { _ in
+        _ = NotificationCenter.default.addObserver(forName: name, object: nil, queue: nil) { _ in
             XCTAssertTrue(true)
         }
 
