@@ -18,6 +18,16 @@ N/A
 
 N/A
 
+## [1.6.0](https://github.com/tbaranes/AudioPlayerSwift/releases/tag/1.6.0) (09-08-2017)
+
+#### Enhancements
+
+- Using one target to generate iOS, macOS, and tvOS framework
+
+#### Bugfixes
+
+- Carthage won't failed anymore due to code signin
+
 ## [1.5.2](https://github.com/tbaranes/AudioPlayerSwift/releases/tag/1.5.2) (28-12-2016)
 
 #### Enhancements
