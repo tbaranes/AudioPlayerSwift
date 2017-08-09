@@ -15,8 +15,6 @@
 		E21882421D1FF7CA00218B74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E21882401D1FF7CA00218B74 /* Main.storyboard */; };
 		E21882441D1FF7CA00218B74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E21882431D1FF7CA00218B74 /* Assets.xcassets */; };
 		E218825A1D1FF83400218B74 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21882591D1FF83400218B74 /* ViewController.swift */; };
-		E234202A1D1FFC5B0093DD66 /* AudioPlayerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E21882261D1FF76200218B74 /* AudioPlayerSwift.framework */; };
-		E234202B1D1FFEA10093DD66 /* AudioPlayerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E28C03861D1FF0DC00FECBF2 /* AudioPlayerSwift.framework */; };
 		E23420371D2002740093DD66 /* sound1.caf in Resources */ = {isa = PBXBuildFile; fileRef = E23420351D2002740093DD66 /* sound1.caf */; };
 		E23420381D2002740093DD66 /* sound1.caf in Resources */ = {isa = PBXBuildFile; fileRef = E23420351D2002740093DD66 /* sound1.caf */; };
 		E23420391D2002740093DD66 /* sound1.caf in Resources */ = {isa = PBXBuildFile; fileRef = E23420351D2002740093DD66 /* sound1.caf */; };
@@ -27,76 +25,49 @@
 		E2A9AFA21C498E2900FE943A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A9AFA11C498E2900FE943A /* ViewController.swift */; };
 		E2A9AFA51C498E2900FE943A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2A9AFA31C498E2900FE943A /* Main.storyboard */; };
 		E2A9AFAA1C498E2900FE943A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2A9AFA81C498E2900FE943A /* LaunchScreen.storyboard */; };
-		E2AF55CD1D5E5640003CD574 /* AudioPlayerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E28C03861D1FF0DC00FECBF2 /* AudioPlayerSwift.framework */; };
-		E2AF55CE1D5E5640003CD574 /* AudioPlayerSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E28C03861D1FF0DC00FECBF2 /* AudioPlayerSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E2AF55D31D5E5646003CD574 /* AudioPlayerSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E21882261D1FF76200218B74 /* AudioPlayerSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E2AF55D71D5E5651003CD574 /* AudioPlayerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E218822A1D1FF76200218B74 /* AudioPlayerSwift.framework */; };
-		E2AF55D81D5E5651003CD574 /* AudioPlayerSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E218822A1D1FF76200218B74 /* AudioPlayerSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E2B205CB1F39F7520078339E /* AudioPlayerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2B205C81F39F73C0078339E /* AudioPlayerSwift.framework */; };
+		E2B205CC1F39F7520078339E /* AudioPlayerSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E2B205C81F39F73C0078339E /* AudioPlayerSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E2B205CF1F39F7570078339E /* AudioPlayerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2B205C81F39F73C0078339E /* AudioPlayerSwift.framework */; };
+		E2B205D01F39F7570078339E /* AudioPlayerSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E2B205C81F39F73C0078339E /* AudioPlayerSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E2B205D31F39F75C0078339E /* AudioPlayerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2B205C81F39F73C0078339E /* AudioPlayerSwift.framework */; };
+		E2B205D41F39F75C0078339E /* AudioPlayerSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E2B205C81F39F73C0078339E /* AudioPlayerSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E21882251D1FF76200218B74 /* PBXContainerItemProxy */ = {
+		E2B205C71F39F73C0078339E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E28C03801D1FF0DC00FECBF2 /* AudioPlayerSwift.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = E21881BF1D1FF69D00218B74;
-			remoteInfo = "AudioPlayerSwift macOS";
+			remoteGlobalIDString = 1E71DFAF13CBFC5CF4B9AF84;
+			remoteInfo = AudioPlayerSwift;
 		};
-		E21882271D1FF76200218B74 /* PBXContainerItemProxy */ = {
+		E2B205C91F39F73C0078339E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E28C03801D1FF0DC00FECBF2 /* AudioPlayerSwift.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = E21881C81D1FF69E00218B74;
-			remoteInfo = "AudioPlayerSwift macOSTests";
+			remoteGlobalIDString = A84E9AC713250141A4DD753D;
+			remoteInfo = AudioPlayerSwiftTests;
 		};
-		E21882291D1FF76200218B74 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E28C03801D1FF0DC00FECBF2 /* AudioPlayerSwift.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E21881DB1D1FF6B300218B74;
-			remoteInfo = "AudioPlayerSwift tvOS";
-		};
-		E218822B1D1FF76200218B74 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E28C03801D1FF0DC00FECBF2 /* AudioPlayerSwift.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E21881E41D1FF6B300218B74;
-			remoteInfo = "AudioPlayerSwift tvOSTests";
-		};
-		E28C03851D1FF0DC00FECBF2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E28C03801D1FF0DC00FECBF2 /* AudioPlayerSwift.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E28C03541D1FEA2F00FECBF2;
-			remoteInfo = "AudioPlayerSwift iOS";
-		};
-		E28C03871D1FF0DC00FECBF2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E28C03801D1FF0DC00FECBF2 /* AudioPlayerSwift.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E28C035E1D1FEA2F00FECBF2;
-			remoteInfo = "AudioPlayerSwift iOSTests";
-		};
-		E2AF55CF1D5E5640003CD574 /* PBXContainerItemProxy */ = {
+		E2B205CD1F39F7520078339E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E28C03801D1FF0DC00FECBF2 /* AudioPlayerSwift.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = E28C03531D1FEA2E00FECBF2;
-			remoteInfo = "AudioPlayerSwift iOS";
+			remoteGlobalIDString = 3E9289CEF329E014CACA2B4C;
+			remoteInfo = AudioPlayerSwift;
 		};
-		E2AF55D41D5E5646003CD574 /* PBXContainerItemProxy */ = {
+		E2B205D11F39F7570078339E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E28C03801D1FF0DC00FECBF2 /* AudioPlayerSwift.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = E21881BE1D1FF69D00218B74;
-			remoteInfo = "AudioPlayerSwift macOS";
+			remoteGlobalIDString = 3E9289CEF329E014CACA2B4C;
+			remoteInfo = AudioPlayerSwift;
 		};
-		E2AF55D91D5E5651003CD574 /* PBXContainerItemProxy */ = {
+		E2B205D51F39F75C0078339E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E28C03801D1FF0DC00FECBF2 /* AudioPlayerSwift.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = E21881DA1D1FF6B300218B74;
-			remoteInfo = "AudioPlayerSwift tvOS";
+			remoteGlobalIDString = 3E9289CEF329E014CACA2B4C;
+			remoteInfo = AudioPlayerSwift;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -107,7 +78,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E2AF55CE1D5E5640003CD574 /* AudioPlayerSwift.framework in Embed Frameworks */,
+				E2B205CC1F39F7520078339E /* AudioPlayerSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -118,7 +89,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E2AF55D31D5E5646003CD574 /* AudioPlayerSwift.framework in Embed Frameworks */,
+				E2B205D01F39F7570078339E /* AudioPlayerSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -129,7 +100,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E2AF55D81D5E5651003CD574 /* AudioPlayerSwift.framework in Embed Frameworks */,
+				E2B205D41F39F75C0078339E /* AudioPlayerSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -166,7 +137,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E234202A1D1FFC5B0093DD66 /* AudioPlayerSwift.framework in Frameworks */,
+				E2B205CF1F39F7570078339E /* AudioPlayerSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,7 +145,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2AF55D71D5E5651003CD574 /* AudioPlayerSwift.framework in Frameworks */,
+				E2B205D31F39F75C0078339E /* AudioPlayerSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,8 +153,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2AF55CD1D5E5640003CD574 /* AudioPlayerSwift.framework in Frameworks */,
-				E234202B1D1FFEA10093DD66 /* AudioPlayerSwift.framework in Frameworks */,
+				E2B205CB1F39F7520078339E /* AudioPlayerSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,12 +187,8 @@
 		E28C03811D1FF0DC00FECBF2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E28C03861D1FF0DC00FECBF2 /* AudioPlayerSwift.framework */,
-				E28C03881D1FF0DC00FECBF2 /* AudioPlayerSwift iOSTests.xctest */,
-				E21882261D1FF76200218B74 /* AudioPlayerSwift.framework */,
-				E21882281D1FF76200218B74 /* AudioPlayerSwift macOSTests.xctest */,
-				E218822A1D1FF76200218B74 /* AudioPlayerSwift.framework */,
-				E218822C1D1FF76200218B74 /* AudioPlayerSwift tvOSTests.xctest */,
+				E2B205C81F39F73C0078339E /* AudioPlayerSwift.framework */,
+				E2B205CA1F39F73C0078339E /* AudioPlayerSwiftTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -291,12 +257,12 @@
 				E21882031D1FF76200218B74 /* Frameworks */,
 				E21882041D1FF76200218B74 /* Resources */,
 				E2AF55D61D5E5646003CD574 /* Embed Frameworks */,
-				E27C4AE91D6791BB004FFBA4 /* Run Script - ⚠️ SwiftLint */,
+				E27C4AE91D6791BB004FFBA4 /* Run Script -  🤖 SwiftLint */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E2AF55D51D5E5646003CD574 /* PBXTargetDependency */,
+				E2B205D21F39F7570078339E /* PBXTargetDependency */,
 			);
 			name = "macOS Example";
 			productName = "macOS Example";
@@ -311,12 +277,12 @@
 				E21882351D1FF7CA00218B74 /* Frameworks */,
 				E21882361D1FF7CA00218B74 /* Resources */,
 				E2AF55DB1D5E5651003CD574 /* Embed Frameworks */,
-				E27C4AEA1D6791C4004FFBA4 /* Run Script - ⚠️ SwiftLint */,
+				E27C4AEA1D6791C4004FFBA4 /* Run Script -  🤖 SwiftLint */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E2AF55DA1D5E5651003CD574 /* PBXTargetDependency */,
+				E2B205D61F39F75C0078339E /* PBXTargetDependency */,
 			);
 			name = "tvOS Example";
 			productName = "tvOS Example";
@@ -331,12 +297,12 @@
 				E2A9AF991C498E2900FE943A /* Frameworks */,
 				E2A9AF9A1C498E2900FE943A /* Resources */,
 				E2AF55D11D5E5640003CD574 /* Embed Frameworks */,
-				E27C4AE51D6791AD004FFBA4 /* Run Script - ⚠️ SwiftLint */,
+				E27C4AE51D6791AD004FFBA4 /* Run Script -  🤖 SwiftLint */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E2AF55D01D5E5640003CD574 /* PBXTargetDependency */,
+				E2B205CE1F39F7520078339E /* PBXTargetDependency */,
 			);
 			name = "iOS Example";
 			productName = "SoundManager Sample";
@@ -397,46 +363,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		E21882261D1FF76200218B74 /* AudioPlayerSwift.framework */ = {
+		E2B205C81F39F73C0078339E /* AudioPlayerSwift.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = AudioPlayerSwift.framework;
-			remoteRef = E21882251D1FF76200218B74 /* PBXContainerItemProxy */;
+			remoteRef = E2B205C71F39F73C0078339E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		E21882281D1FF76200218B74 /* AudioPlayerSwift macOSTests.xctest */ = {
+		E2B205CA1F39F73C0078339E /* AudioPlayerSwiftTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = "AudioPlayerSwift macOSTests.xctest";
-			remoteRef = E21882271D1FF76200218B74 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		E218822A1D1FF76200218B74 /* AudioPlayerSwift.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = AudioPlayerSwift.framework;
-			remoteRef = E21882291D1FF76200218B74 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		E218822C1D1FF76200218B74 /* AudioPlayerSwift tvOSTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "AudioPlayerSwift tvOSTests.xctest";
-			remoteRef = E218822B1D1FF76200218B74 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		E28C03861D1FF0DC00FECBF2 /* AudioPlayerSwift.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = AudioPlayerSwift.framework;
-			remoteRef = E28C03851D1FF0DC00FECBF2 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		E28C03881D1FF0DC00FECBF2 /* AudioPlayerSwift iOSTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "AudioPlayerSwift iOSTests.xctest";
-			remoteRef = E28C03871D1FF0DC00FECBF2 /* PBXContainerItemProxy */;
+			path = AudioPlayerSwiftTests.xctest;
+			remoteRef = E2B205C91F39F73C0078339E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -478,47 +416,47 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		E27C4AE51D6791AD004FFBA4 /* Run Script - ⚠️ SwiftLint */ = {
+		E27C4AE51D6791AD004FFBA4 /* Run Script -  🤖 SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Run Script - ⚠️ SwiftLint";
+			name = "Run Script -  🤖 SwiftLint";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint --config ../.swiftlint.yml\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
-		E27C4AE91D6791BB004FFBA4 /* Run Script - ⚠️ SwiftLint */ = {
+		E27C4AE91D6791BB004FFBA4 /* Run Script -  🤖 SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Run Script - ⚠️ SwiftLint";
+			name = "Run Script -  🤖 SwiftLint";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint --config ../.swiftlint.yml\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
 		};
-		E27C4AEA1D6791C4004FFBA4 /* Run Script - ⚠️ SwiftLint */ = {
+		E27C4AEA1D6791C4004FFBA4 /* Run Script -  🤖 SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Run Script - ⚠️ SwiftLint";
+			name = "Run Script -  🤖 SwiftLint";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint --config ../.swiftlint.yml\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -553,20 +491,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E2AF55D01D5E5640003CD574 /* PBXTargetDependency */ = {
+		E2B205CE1F39F7520078339E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "AudioPlayerSwift iOS";
-			targetProxy = E2AF55CF1D5E5640003CD574 /* PBXContainerItemProxy */;
+			name = AudioPlayerSwift;
+			targetProxy = E2B205CD1F39F7520078339E /* PBXContainerItemProxy */;
 		};
-		E2AF55D51D5E5646003CD574 /* PBXTargetDependency */ = {
+		E2B205D21F39F7570078339E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "AudioPlayerSwift macOS";
-			targetProxy = E2AF55D41D5E5646003CD574 /* PBXContainerItemProxy */;
+			name = AudioPlayerSwift;
+			targetProxy = E2B205D11F39F7570078339E /* PBXContainerItemProxy */;
 		};
-		E2AF55DA1D5E5651003CD574 /* PBXTargetDependency */ = {
+		E2B205D61F39F75C0078339E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "AudioPlayerSwift tvOS";
-			targetProxy = E2AF55D91D5E5651003CD574 /* PBXContainerItemProxy */;
+			name = AudioPlayerSwift;
+			targetProxy = E2B205D51F39F75C0078339E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

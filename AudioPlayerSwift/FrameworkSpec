@@ -1,0 +1,34 @@
+# Specs to generate and configure xcodeproj
+language = swift("3.0")
+platforms = [
+    macos("10.10"),
+    ios("9.0"),
+    tvos("9.0")
+]
+
+audioplayerswift_tests = new_target do |target|
+  target.name = "AudioPlayerSwiftTests"
+  target.platforms = platforms
+  target.language = language
+  target.info_plist = "Supporting Files/Info.plist"
+  target.bundle_id = "com.recisio.AudioPlayerSwiftTests"
+  target.include_files = ["AudioPlayerSwift Tests/**/*.swift"]
+  target.type = :unit_test_bundle
+end
+
+audioplayerswift = new_target do |target|
+  target.name = "AudioPlayerSwift"
+  target.platforms = platforms
+  target.language = language
+  target.info_plist = "Supporting Files/Info.plist"
+  target.bundle_id = "com.recisio.AudioPlayerSwift"
+  target.header = "Supporting Files/AudioPlayerSwift.h"
+  target.include_files = ["../Sources/**/*.swift"]
+  target.test_target = audioplayerswift_tests
+end
+
+project.name = "AudioPlayerSwift"
+project.targets = [
+  audioplayerswift,
+  audioplayerswift_tests
+]

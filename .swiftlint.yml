@@ -2,6 +2,10 @@ identifier_name:
   min_length: 2
   excluded: 
    - x
+   - T
+
+large_tuple:
+   - 3
 
 type_name:
   excluded: 
@@ -11,7 +15,10 @@ line_length: 150
 file_length: 500
 number_separator:
   minimum_length: 5
-
+disabled_rules:
+ - todo
+private_outlet:
+    allow_private_set: true
 opt_in_rules:
  - closure_spacing
  - conditional_returns_on_newline
@@ -28,3 +35,9 @@ opt_in_rules:
  - number_separator
  - object_literal
  - fatal_error_message
+ - private_outlet
+ - implicit_return
+ - multiline_parameters
+ - vertical_parameter_alignment_on_call
+ - unneeded_parentheses_in_closure_argument
+ # - trailing_closure // false positive

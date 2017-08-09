@@ -7,12 +7,16 @@
 //
 
 import XCTest
-@testable import AudioPlayerSwift
+import AudioPlayerSwift
 
-class AudioPlayerSwiftTests: XCTestCase {
+final class AudioPlayerSwiftTests: XCTestCase {
+
+    // MARK: Properties
 
     var soundPath: String?
     var audioPlayer: AudioPlayer?
+
+    // MARK: Life cycle
 
     override func setUp() {
         super.setUp()
@@ -39,18 +43,17 @@ extension AudioPlayerSwiftTests {
     func testInit_withValidPath() {
         do {
             _ = try AudioPlayer(contentsOfPath: soundPath ?? "")
-            XCTAssertTrue(true)
         } catch {
-            XCTAssertTrue(false)
+            XCTFail()
         }
     }
 
     func testInvalidFileName() {
         do {
             _ = try AudioPlayer(contentsOfPath: "")
-            XCTAssertTrue(false)
+            XCTFail()
         } catch {
-            XCTAssertTrue(true)
+
         }
     }
 
@@ -92,11 +95,12 @@ extension AudioPlayerSwiftTests {
 
     func testAudioDidFinishNotification() {
         let name = AudioPlayer.SoundDidFinishPlayingNotification
-        NotificationCenter.default.addObserver(forName: name, object: nil, queue: nil) { _ in
+        _ = NotificationCenter.default.addObserver(forName: name, object: nil, queue: nil) { _ in
             XCTAssertTrue(true)
         }
 
         audioPlayer?.play()
         audioPlayer?.stop()
     }
+
 }
