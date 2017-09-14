@@ -44,14 +44,14 @@ extension AudioPlayerSwiftTests {
         do {
             _ = try AudioPlayer(contentsOfPath: soundPath ?? "")
         } catch {
-            XCTFail()
+            XCTFail("should have a valid path")
         }
     }
 
     func testInvalidFileName() {
         do {
             _ = try AudioPlayer(contentsOfPath: "")
-            XCTFail()
+            XCTFail("path shouldn't be valid")
         } catch {
 
         }
