@@ -189,7 +189,7 @@ extension AudioPlayer {
         fadeTo(volume: 0.0, duration: duration)
     }
 
-    func handleFadeTo() {
+    @objc func handleFadeTo() {
         let now = NSDate().timeIntervalSinceReferenceDate
         let delta: Float = (Float(now - fadeStart) / Float(fadeTime) * (targetVolume - startVolume))
         let volume = startVolume + delta
