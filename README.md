@@ -1,3 +1,7 @@
+<h1 align=center>
+<img src="logo.png" width=60%>
+</h1>
+
 # AudioPlayer
 
 [![Travis](https://img.shields.io/travis/tbaranes/AudioPlayerSwift.svg)](https://travis-ci.org/tbaranes/AudioPlayerSwift)
