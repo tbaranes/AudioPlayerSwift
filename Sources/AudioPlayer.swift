@@ -114,9 +114,8 @@ public class AudioPlayer: NSObject {
     // MARK: Init
 
     public convenience init(fileName: String) throws {
-        let fixedFileName = fileName.trimmingCharacters(in: .whitespacesAndNewlines)
-        var soundFileComponents = fixedFileName.components(separatedBy: ".")
-        if soundFileComponents.count == 1 {
+        let soundFileComponents = fileName.trimmingCharacters(in: .whitespacesAndNewlines).components(separatedBy: ".")
+        guard soundFileComponents.count == 2 else {
             throw AudioPlayerError.fileExtension
         }
 
