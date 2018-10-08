@@ -30,6 +30,7 @@ public enum AudioPlayerError: Error {
 public class AudioPlayer: NSObject {
 
     public static let SoundDidFinishPlayingNotification = Notification.Name(rawValue: "SoundDidFinishPlayingNotification")
+    public static let SoundDidFinishPlayingSuccessfully = "success"
     public typealias SoundDidFinishCompletion = (_ didFinish: Bool) -> Void
 
     // MARK: Properties
@@ -223,7 +224,8 @@ extension AudioPlayer: AVAudioPlayerDelegate {
             nonNilCompletionHandler(flag)
         }
 
-        NotificationCenter.default.post(name: AudioPlayer.SoundDidFinishPlayingNotification, object: self)
+        let success = [ AudioPlayer.SoundDidFinishPlayingSuccessfully: flag ]
+        NotificationCenter.default.post(name: AudioPlayer.SoundDidFinishPlayingNotification, object: self, userInfo: success)
     }
 
 }
