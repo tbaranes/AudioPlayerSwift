@@ -26,8 +26,18 @@ class ViewController: UIViewController {
         } catch {
             print("Sound initialization failed")
         }
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(handleCompletion(_:)), name: AudioPlayer.SoundDidFinishPlayingNotification, object: nil)
     }
 
+    func handleCompletion(_ notification:Notification) {
+        let audioPlayer = notification.object as! AudioPlayer
+        if let name = audioPlayer.name,
+           let success = notification.userInfo?[AudioPlayer.SoundDidFinishPlayingSuccessfully] {
+            print("AudioPlayer with name '\(name)' did finish playing with success: \(success)")
+        }
+    }
+    
     // MARK: IBAction
 
     @IBAction func playSound1Pressed(sender: AnyObject) {
