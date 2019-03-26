@@ -14,6 +14,7 @@ N/A
 
 - Swift 4 and Xcode 9 support
 - Swift 4.2 and Xcode 10 support
+- Swift 5 and Xcode 10.2 support
 - SoundDidFinishPlayingNotification now includes SoundDidFinishPlayingSuccessfully boolean in the notification's userInfo
 
 #### Bugfixes
