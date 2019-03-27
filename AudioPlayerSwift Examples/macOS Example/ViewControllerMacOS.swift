@@ -47,11 +47,11 @@ class ViewControllerMacOS: NSViewController {
     }
 
     @IBAction func sound1LoopPressed(sender: NSButton) {
-        sound1?.numberOfLoops = sender.state == NSOnState ? -1 : 0
+        sound1?.numberOfLoops = sender.state == NSControl.StateValue.on ? -1 : 0
     }
 
     @IBAction func sound2LoopPressed(sender: NSButton) {
-        sound2?.numberOfLoops = sender.state == NSOnState ? -1 : 0
+        sound2?.numberOfLoops = sender.state == NSControl.StateValue.on ? -1 : 0
     }
 
     @IBAction func sound1VolumeValueDidChange(sender: NSSlider) {
