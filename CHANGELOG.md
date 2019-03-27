@@ -12,14 +12,23 @@ N/A
 
 #### Enhancements
 
-- Swift 4 and Xcode 9 support
-- Swift 4.2 and Xcode 10 support
-- Swift 5 and Xcode 10.2 support
-- SoundDidFinishPlayingNotification now includes SoundDidFinishPlayingSuccessfully boolean in the notification's userInfo
+N/A
 
 #### Bugfixes
 
 N/A
+
+## [2.0.0](https://github.com/tbaranes/AudioPlayerSwift/releases/tag/2.0.0) (27-03-2019)
+
+#### API breaking changes
+
+- Swift 5 and Xcode 10.2 support
+
+#### Enhancements
+
+- Swift 4 and Xcode 9 support
+- Swift 4.2 and Xcode 10 support
+- SoundDidFinishPlayingNotification now includes SoundDidFinishPlayingSuccessfully boolean in the notification's userInfo
 
 ## [1.6.0](https://github.com/tbaranes/AudioPlayerSwift/releases/tag/1.6.0) (09-08-2017)
 

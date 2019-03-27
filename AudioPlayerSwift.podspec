@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
 
 s.name            	= "AudioPlayerSwift"
 s.module_name      	= "AudioPlayer"
-s.version          	= "1.6.1"
+s.version          	= "2.0.0"
 s.summary          	= "AudioPlayer is a simple class for playing audio in iOS, macOS and tvOS apps."
 s.description      	= "AudioPlayer is a simple class for playing audio in iOS, macOS and tvOS apps. You can use it for basic audio usage (play / stop), but also for advanced usage (loop, pan, seek...)"
 s.homepage         	= "https://github.com/tbaranes/AudioPlayerSwift"
