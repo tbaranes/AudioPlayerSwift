@@ -151,7 +151,7 @@ public class AudioPlayer: NSObject {
 extension AudioPlayer {
 
     public func play(withDelay delay: Int = 0) {
-        if self.isPlaying == false {
+        if !self.isPlaying {
             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(delay), execute: {
                 self.sound?.play()
             })
@@ -196,12 +196,15 @@ extension AudioPlayer {
         sound?.volume = volume
         if delta > 0.0 && volume >= targetVolume ||
             delta < 0.0 && volume <= targetVolume || delta == 0.0 {
-                sound?.volume = targetVolume
-                timer?.invalidate()
-                timer = nil
-                if sound?.volume == 0 {
-                    stop()
-                }
+            sound?.volume = targetVolume
+            timer?.invalidate()
+            timer = nil
+            if sound?.volume == 0 {
+                stop()
+            }
+        // Continue fading, but if it's not currently playing, kick it off.
+        } else if !sound!.isPlaying {
+            play()
         }
     }
 
