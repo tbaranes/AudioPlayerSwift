@@ -62,4 +62,11 @@ class ViewControllerMacOS: NSViewController {
         sound2?.volume = Float(sender.doubleValue)
     }
 
+    @IBAction func fadeInPressed(_ sender: Any) {
+        sound2?.fadeIn()
+    }
+    
+    @IBAction func fadeOutPressed(_ sender: Any) {
+        sound2?.fadeOut()
+    }
 }
